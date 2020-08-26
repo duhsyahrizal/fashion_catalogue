@@ -1,0 +1,297 @@
+<!doctype html>
+<html lang="en">
+	<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<!-- Favicons -->
+	<link rel="icon" href="../images/favicon.ico">
+	
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+	
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="../style.css">
+
+	<!-- Font Awesome -->
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+	
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+	
+	<!-- Required JQuery on document -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+	
+    <title>NYMAR | Local Proud Product</title>
+
+	</head>
+	<body class="body-content">
+		<div id="preloader-detail">
+			<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+		</div>
+		<header class="header-area">
+			<nav class="navbar fixed-top scrolling-navbar navbar-light border-bottom shadow-sm bg-white">
+				<div class="container-fluid">
+					
+					<div id="mySidenav" class="sidenav">
+						<div class="menu">Menu</div>
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<a href="http://nymarcatalogue.com">Home</a>
+						<div class="collapsible">Products</div>
+						<div class="content">
+							<a href="http://nymarcatalogue.com/products/category-girl">Girl Fashion</a>
+							<a href="http://nymarcatalogue.com/products/category-men">Men Fashion</a>
+							<a href="http://nymarcatalogue.com/products/category-kid">Kids Fashion</a>
+							<a href="http://nymarcatalogue.com/products/category-hijab">Hijab</a>
+							<a href="http://nymarcatalogue.com/products/category-acc">Accessories</a>
+						</div>
+						<a href="http://nymarcatalogue.com/products/categories">Categories</a>
+						<a href="http://nymarcatalogue.com/howto">How to Order</a>
+						<a href="http://nymarcatalogue.com/contact">Contact Us</a>
+						<a href="http://nymarcatalogue.com/about">About Us</a>
+					</div>
+					
+					<button class="navbar-toggler navbar-header w-180" style="text-align:left;color:black;" type="button" onclick="openNav()">
+						<span class="navbar-toggler-icon navbar-brand"></span><span id="menu" style="font-size:0.75em;">Menu</span>
+					</button>
+						
+					<div class="navbar-header mr-auto ml-auto">
+						<a class="navbar-brand logo" href="http://nymarcatalogue.com">
+							<picture>
+								<source srcset="../images/icon.png" media="(max-width: 768px)">
+								<img src="../images/logo-transparent.png" alt="Nymar" height="50">
+							</picture>
+						</a>
+					</div>
+						
+					<div class="navbar-header" style="text-align:right;">
+						<form action="result.php" id="searchForm" method="get">
+							<input type="text" name="s" id="search-input" placeholder="Search.." autocomplete="off">
+						</form>
+						
+						<div class="notification navbar-brand">
+							<div class="showFav">
+								<img src="../images/ic_heart_ol.svg" height="34">
+								<span class="badge">0</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</nav>
+		</header>
+	
+	<section class="nav-category">
+		<div class="container nav-avoid">
+			<h5 class="text-center poppins">CATEGORIES</h5>
+			<div class="container text-center">
+				<div class="btn-group" role="group">
+					<a href="category-girl"><button type="button" class="btn-color-link">Girl Fashion</button></a>
+					<a href="category-men"><button type="button" class="btn-color-link">Men Fashion</button></a>
+					<a href="category-kid"><button type="button" class="btn-color-link">Kids Fashion</button></a>
+					<a href="category-hijab"><button type="button" class="btn-color-link">Hijab</button></a>
+					<a href="category-acc"><button type="button" class="btn-color-link">Accessories</button></a>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	
+	<section class="current-location">
+		<div class="container-fluid py-2 bg-light text-center" id="block-mobile">
+			<h5 class="product-name-mobile"></h5>
+			<div class="recent-page"><a href="http://nymarcatalogue.com"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> <a href="categories">Products</a> <i class="fa fa-angle-right" aria-hidden="true"> </i> <a href="" id="category-page"></a> <i class="fa fa-angle-right" aria-hidden="true"> </i> <span class="recent-page" id="product-page"></span> </div>
+		</div>
+		<div class="container current-page">
+			<div class="recent-page py-3"><a href="http://nymarcatalogue.com"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> <a href="categories">Products</a> <i class="fa fa-angle-right" aria-hidden="true"> </i> <a href="" id="category-page"></a> <i class="fa fa-angle-right" aria-hidden="true"> </i> <span class="recent-page" id="product-page"></span> </div>
+		</div>
+	</section>
+
+	
+	<script>
+		$(window).on('load', function() {
+  		$(document).delay(1500);
+		});
+	$(document).ready(function(){
+		var pageName = localStorage.getItem('pageName');
+		var idContent = localStorage.getItem('idContent');
+		let products = JSON.parse(localStorage.getItem('products'));
+		
+		function numberWithCommas(x) {
+					var parts = x.toString().split(".");
+					parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
+					return parts.join(",");
+		}
+		for(let product of products){
+			var money = product.price;
+			// get function numberWithCommas
+			let productPrice = numberWithCommas((money));
+			if(idContent == product.product_id){
+				var categoryName = product.category, imagePath = product.image, imagePosition = product.image_picker, productName = product.title, productDesc = product.desc, productDetail = product.detail, productAttr = product.attr, productColor = product.color, onlineShop = product.olshop;
+				
+				// function to add dot (.) in integer for money
+
+				currentPage = $('.current-page #category-page');
+				currentLocMobile = $('#block-mobile #category-page');
+				
+				if(categoryName == 'girl fashion'){
+					currentPage.attr('href', 'category-girl');
+					currentPage.text('Girl Fashion');
+					currentLocMobile.attr('href', 'category-girl');
+					currentLocMobile.text('Girl Fashion');
+				}
+				else if(categoryName == 'man fashion'){
+					currentPage.attr('href', 'category-men');
+					currentPage.text('Man Fashion');
+					currentLocMobile.attr('href', 'category-men');
+					currentLocMobile.text('Man Fashion');
+				}
+				else if(categoryName == 'kid fashion'){
+					currentPage.attr('href', 'category-kid');
+					currentPage.text('Kid Fashion');
+					currentLocMobile.attr('href', 'category-kid');
+					currentLocMobile.text('Kid Fashion');
+				}
+				else if(categoryName == 'hijab'){
+					currentPage.attr('href', 'category-hijab');
+					currentPage.text('Hijab');
+					currentLocMobile.attr('href', 'category-hijab');
+					currentLocMobile.text('Hijab');
+				}
+				else if(categoryName == 'accessories'){
+					currentPage.attr('href', 'category-acc');
+					currentPage.text('Accessories');
+					currentLocMobile.attr('href', 'category-acc');
+					currentLocMobile.text('Accessories');
+				}
+
+				$('#product-page').text(productName);
+				$('.current-page #product-page').text(productName);
+				$('.product-name-mobile').text(productName);
+
+				$('#content-product').html('<div class="col-12 col-sm-12 col-md-6 col-lg-4"><img src="../'+ imagePath +'" class="info-img"></div><div class="col-12 mt-1 position-img px-5" id="position"></div><div class="col-12 col-sm-12 col-md-6 col-lg-4"><h5 class="product-name">'+ productName +'</h5><h5 class="price">Price<h5><div class="detail-attr">IDR. '+ productPrice +'</div><h6 class="mt-2 pt-1">Keterangan</h6><p class="text-attr">'+ productDesc +'</p><div class="container-fluid position"><div class="row justify-content-left img-pick" id="position-desktop"></div></div><h6 class="available mt-3">Tersedia</h6><p class="available text-attr">Shopee, Bukalapak, Tokopedia</p><button id="myBtn" type="button" class="btn-color mr-1" data-toggle="modal" data-target="#exampleModal">Checkout</button></div><div class="area-details col-md col-lg-4" id="tabs-detail"><nav><div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="btn-color-link-u active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">RINCIAN</a><a class="btn-color-link-u" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">DETAIL UKURAN</a><a class="btn-color-link-u" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" 	role="tab" aria-controls="nav-contact" aria-selected="true">WARNA</a></div></nav><div class="tab-content text-small" id="nav-tabContent"><div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">'+ productDetail + "<br>Ukuran : " + productAttr + "<br>Warna : "+ productColor +'</div><div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">'+ productAttr +'</div><div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">'+ productColor +'</div></div></div>');
+
+				var imgLength = 4;
+				for(var i=0;i<imgLength;i++){
+					$('#content-product #position').append('<img src="../'+ imagePosition[i] +'" data-id="'+ i +'" class="img-picker pt-1 mx-1">');
+					$('#content-product #position-desktop').append('<a href="#" data-id="'+ i +'"><img class="img-picker" src="../'+ imagePosition[i] +'"></a>');
+				}
+				
+				var mainImage = $('#content-product .info-img');
+				$('#content-product').on('click', '.img-picker', function() {
+					target_picker = $(this).attr('src');
+					mainImage.attr('src', target_picker);
+				});
+
+				$('.modal-body').html('<div class="container"><div class="row justify-content-center align-items-center" id="olshop"></div></div>');
+				let olshopImage = onlineShop.image;
+				let olshopLink = onlineShop.link;
+
+				var olshopLength = 5;
+				for(var i=0;i<olshopLength;i++){
+					$('.modal-body #olshop').append('<a href="'+ olshopLink[i] +'" target="_blank" title="Shopee" id="link"><img src="../'+ olshopImage[i] +'" class="mp-img"></a>');
+				}
+			}
+		}
+		
+	});
+	</script>
+
+	<section class="product-area">
+		<div class="container">
+			<div class="row" id="content-product">
+				<!-- Generated by script JQuery -->
+			</div>
+		</div>
+	</section>
+
+	
+	<!-- Modal -->
+	<div class="modal fade bd-example-modal-lg" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+			<h4 class="modal-title ml-1" id="exampleModalLabel">Choose Marketplace</h4>
+			<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				<span aria-hidden="true">&times;</span>
+			</button>
+			</div>
+			<div class="modal-body py-3 ml-1">
+			...
+			</div>
+		</div>
+		</div>
+	</div>
+
+	<div class="fav-overlay">
+		<div class="fav">
+			<span class="close-fav">
+				<i class="fa fa-window-close"></i>
+			</span>
+			<div class="container-fluid fav-area">
+				<h2>Your Favorites</h2>
+				<div class="fav-content">
+				<!-- favorite item -->
+
+				<!-- end of favorite item -->
+				</div>
+				<div class="fav-footer">
+					<h3 class="mb-4">Your Total : IDR. <span class="fav-total">0</span></h3>
+					<button class="banner-btn clear-fav mb-2">Clear Favorites</button>
+					<a href="../howto"><span class="t-bold"><i class="fa fa-question-circle" aria-hidden="true"></i> How to Order</span></a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<footer class="bd-footer mt-5">
+		<div class="container py-5">
+			<div class="row">
+				<div class="col-12 col-sm-6 col-md col-lg">
+				  <h2 class="t-bold">NYMAR</h2>
+				  <a href="#" class="grey">Jl. Permana II No. 48, Cimahi, Jawa Barat, 40413</a><br>
+					<div class="social-icon icon-socmed">
+						<a href="https://facebook.com"><i class="fa fa-facebook-f p-1"></i></a>
+						<a href="https://twitter.com"><i class="fa fa-twitter p-1"></i></a>
+						<a href="https://instagram.com"><i class="fa fa-instagram p-1"></i></a>
+					</div>
+				</div>
+				<div class="col-12 col-sm-6 col-md col-lg">
+				  <h5 class="t-bold">INFORMATION</h5>
+          <ul>
+            <li><a href="http://nymarcatalogue.com/about">About Us</a></li>
+            <li><a href="http://nymarcatalogue.com/howto">How to Order</a></li>
+            <li><a href="#">Privacy Policy</a></li>
+          </ul>
+				</div>
+				<div class="col-12 col-sm-6 col-md col-lg" id="cs-col">
+          <h5 class="t-bold">CUSTOMER SERVICE</h5>
+          <ul>
+            <li><a href="http://nymarcatalogue.com/contact">Contact Us</a></li>
+            <li><a href="http://nymarcatalogue.com/products/categories">Products</a></li>
+          </ul>
+				</div>
+				<div class="col-12 col-sm-6 col-md col-lg social-icon">
+          <h5 class="t-bold">CONTACT US</h5>
+          <ul>
+            <li><a href="#">cs@nymarcatalogue.com</a></li>
+            <li><a href="#">(+62) 813 3245 2122</a></li>
+          </ul>
+				</div>
+			</div>
+		</div>
+    <div class="copyright">
+      <div class="text-center">&copy; Copyright Nymar Catalogue <script>document.write(new Date().getFullYear());</script>. All Rights Reserved.</div>
+    </div>
+  </footer>
+	<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+	
+	<!-- JavaScript -->
+	<script src="../js/script.js"></script>
+	<script src="../js/favorite_item.js"></script>
+	<script src="../js/app.js"></script>
+	</body>
+</html>
