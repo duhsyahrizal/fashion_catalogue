@@ -25,58 +25,58 @@
 	</head>
 	<body>
 	<div id="preloader">
-	    <div class="spinner"></div>
+		<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 	</div>
 	<header class="header-area">
-		<nav class="navbar fixed-top scrolling-navbar navbar-light border-bottom shadow-sm bg-white">
-			<div class="container-fluid">
-				
-				<div id="mySidenav" class="sidenav">
-					<div class="menu">Menu</div>
-					<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-					<a href="http://nymarcatalogue.com">Home</a>
-					<div class="collapsible">Products</div>
-					<div class="content">
-						<a href="http://nymarcatalogue.com/products/category-girl">Girl Fashion</a>
-						<a href="http://nymarcatalogue.com/products/category-men">Men Fashion</a>
-						<a href="http://nymarcatalogue.com/products/category-kid">Kids Fashion</a>
-						<a href="http://nymarcatalogue.com/products/category-hijab">Hijab</a>
-						<a href="http://nymarcatalogue.com/products/category-acc">Accessories</a>
+			<nav class="navbar fixed-top scrolling-navbar navbar-light border-bottom shadow-sm bg-white">
+				<div class="container-fluid">
+					
+					<div id="mySidenav" class="sidenav">
+						<div class="menu">Menu</div>
+						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+						<a href="/">Home</a>
+						<div class="collapsible">Products</div>
+						<div class="content">
+							<a href="/products/category-girl">Girl Fashion</a>
+							<a href="/products/category-men">Men Fashion</a>
+							<a href="/products/category-kid">Kids Fashion</a>
+							<a href="/products/category-hijab">Hijab</a>
+							<a href="/products/category-acc">Accessories</a>
+						</div>
+						<a href="/products/categories">Categories</a>
+						<a href="/howto">How to Order</a>
+						<a href="/contact">Contact Us</a>
+						<a href="/about">About Us</a>
 					</div>
-					<a href="http://nymarcatalogue.com/products/categories">Categories</a>
-					<a href="http://nymarcatalogue.com/howto">How to Order</a>
-					<a href="http://nymarcatalogue.com/contact">Contact Us</a>
-					<a href="http://nymarcatalogue.com/about">About Us</a>
-				</div>
-				
-				<button class="navbar-toggler navbar-header w-180" style="text-align:left;color:black;" type="button" onclick="openNav()">
-				  <span class="navbar-toggler-icon navbar-brand"></span><span id="menu" style="font-size:0.75em;">Menu</span>
-				</button>
 					
-				<div class="navbar-header mr-auto ml-auto">
-					<a class="navbar-brand logo" href="http://nymarcatalogue.com">
-						<picture>
-						  <source srcset="../images/icon.png" media="(max-width: 768px)">
-						  <img src="../images/logo-transparent.png" alt="Nymar" height="50">
-						</picture>
-					</a>
-				</div>
-					
-				<div class="navbar-header" style="text-align:right;">
-					<form action="result.php" id="searchForm" method="get">
-						<input type="text" name="s" id="search-input" placeholder="Search.." autocomplete="off">
-					</form>
-					
-					<div class="notification navbar-brand">
-						<div class="showFav">
-							<img src="../images/ic_heart_ol.svg" height="34">
-							<span class="badge">0</span>
+					<button class="navbar-toggler navbar-header w-180" style="text-align:left;color:black;" type="button" onclick="openNav()">
+						<span class="navbar-toggler-icon navbar-brand"></span><span id="menu" style="font-size:0.75em;">Menu</span>
+					</button>
+						
+					<div class="navbar-header mr-auto ml-auto">
+						<a class="navbar-brand logo" href="/">
+							<picture>
+								<source srcset="/images/icon.png" media="(max-width: 768px)">
+								<img src="/images/logo-transparent.png" alt="Nymar" height="50">
+							</picture>
+						</a>
+					</div>
+						
+					<div class="navbar-header search" style="text-align:right;">
+						<form action="/products/result.php" id="searchForm" method="get">
+							<input type="text" name="s" id="search-input" placeholder="Search.." autocomplete="off">
+						</form>
+						
+						<div class="notification navbar-brand">
+							<div class="showFav">
+								<img src="/images/ic_heart_ol.svg" height="34">
+								<span class="badge">0</span>
+							</div>
 						</div>
 					</div>
 				</div>
-			</div>
-		</nav>
-	</header>
+			</nav>
+		</header>
   
   	<section class="nav-category">
 		<div class="container nav-avoid">
@@ -188,12 +188,12 @@
 				<div class="fav-footer">
 					<h3 class="mb-4">Your Total : IDR. <span class="fav-total">0</span></h3>
 					<button class="banner-btn clear-fav mb-2">Clear Favorites</button>
-					<a href="../howto"><span class="t-bold"><i class="fa fa-question-circle" aria-hidden="true"></i> How to Order</span></a>
+					<a href="/howto"><span class="t-bold"><i class="fa fa-question-circle" aria-hidden="true"></i> How to Order</span></a>
 				</div>
 			</div>
 		</div>
 	</div>
-
+	
 	<footer class="bd-footer mt-5">
 		<div class="container py-5">
 			<div class="row">
@@ -209,29 +209,29 @@
 				<div class="col-12 col-sm-6 col-md col-lg">
 				  <h5 class="t-bold">INFORMATION</h5>
           <ul>
-            <li><a href="http://nymarcatalogue.com/about">About Us</a></li>
-            <li><a href="http://nymarcatalogue.com/howto">How to Order</a></li>
+            <li><a href="/about">About Us</a></li>
+						<li><a href="/howto">How to Order</a></li>
             <li><a href="#">Privacy Policy</a></li>
           </ul>
 				</div>
 				<div class="col-12 col-sm-6 col-md col-lg" id="cs-col">
           <h5 class="t-bold">CUSTOMER SERVICE</h5>
           <ul>
-            <li><a href="http://nymarcatalogue.com/contact">Contact Us</a></li>
-            <li><a href="http://nymarcatalogue.com/products/categories">Products</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="/products/categories">Products</a></li>
           </ul>
 				</div>
 				<div class="col-12 col-sm-6 col-md col-lg social-icon">
           <h5 class="t-bold">CONTACT US</h5>
           <ul>
-            <li><a href="#">cs@nymarcatalogue.com</a></li>
-            <li><a href="#">(+62) 813 3245 2122</a></li>
+            <li><a href="mailto:cs@nymarcatalogue.com">cs@nymarcatalogue.com</a></li>
+            <li><a href="https://api.whatsapp.com/send?phone=6289652647526&text=Assalamu'alaikum%20Nymar%20Catalogue">(+62) 813 3245 2122</a></li>
           </ul>
 				</div>
 			</div>
 		</div>
     <div class="copyright">
-      <div class="text-center">&copy; Copyright Nymar Catalogue <script>document.write(new Date().getFullYear());</script>. All Rights Reserved.</div>
+      <div class="text-cr text-center">&copy; Copyright Nymar Catalogue <script>document.write(new Date().getFullYear());</script>. All Rights Reserved.</div>
     </div>
   </footer>
 	<!-- jQuery first, then Popper.js, then Bootstrap JS -->

@@ -10,14 +10,14 @@ function numberWithCommas(x) {
 
 // preloader handler
 $(document).ready(function() {
-  $('.body-content').addClass('disscroll');
+  $('body').addClass('disscroll');
 })
 
 $(window).on('load', function() {
   $('#preloader').delay(1500).fadeOut('slow', function() { $(this).remove(); });
   $('#preloader-detail').delay(2000).fadeOut('slow', function() { $(this).remove(); });
   setTimeout(() => {
-    $('.body-content').removeClass('disscroll');
+    $('body').removeClass('disscroll');
   }, 1500);
 });
 
