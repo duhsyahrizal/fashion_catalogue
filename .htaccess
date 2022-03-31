@@ -1,5 +1,9 @@
-# nginx configuration by winginx.com
+root /var/www/html/levronka;
 
 location / {
-  rewrite ^(.*)$ /$1.html break;
+    try_files $uri @rewrite;
+}
+location @rewrite {
+    rewrite ^(.*[^/])$ $1/ permanent;
+    rewrite ^(.*)/$ $1.html break;
 }
