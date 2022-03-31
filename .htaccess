@@ -1,11 +1,5 @@
-# mod_rewrite
+# nginx configuration by winginx.com
 
-RewriteEngine on
-
-RewriteCond %{REQUEST_FILENAME}\.html -f
-
-RewriteRule ^(.*)$ $1.html [NC,L]
-
-<IfModule mod_headers.c>
-Header set Access-Control-Allow-Origin "*"
-</IfModule>
+location / {
+  rewrite ^(.*)$ /$1.html break;
+}
