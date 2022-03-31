@@ -1,4 +1,4 @@
-var url = 'http://nymarcatalogue.com/js/products.json';
+var url = '../js/products.json';
 // var url = 'http://localhost/NYMAR-1/js/products.json';
 
 // function to add dot (.) in integer for money
@@ -68,7 +68,7 @@ class UIAll {
     div.classList.add('text-center');
     div.innerHTML = `
       <h5>Is'nt any item here ?</h5>
-      <img class="my-2" src="http://nymarcatalogue.com/img/cart-plus-solid.svg" height="40px" width="40px" />
+      <img class="my-2" src="../img/cart-plus-solid.svg" height="40px" width="40px" />
       <h5>Let's add some product</h5>
     `;
     if(tempTotal == 0){
@@ -87,12 +87,12 @@ class UIAll {
     div.classList.add('row', 'fav-items', 'align-items-center');
     div.innerHTML = `
       <div class="col-lg-3 col-md-3 col-sm-2 col-3 mb-3">
-        <img src="http://nymarcatalogue.com/${item.image_thumb}" alt="product">
+        <img src="../${item.image_thumb}" alt="product">
       </div>
       <div class="col-lg-7 col-md-6 col-sm-8 col-7 mb-3">
         <h4>${item.title}</h4>
         <h6 class="item-price">IDR. ${moneywithDot}</h6>
-        <div class="item-price"><a href="http://nymarcatalogue.com/products/detail?product=${item.title}?category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
+        <div class="item-price"><a href="../products/detail?product=${item.title}?category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-2 col-2">
         <span><i class="fa fa-trash remove-item" data-id="${item.product_id}"></i></span>

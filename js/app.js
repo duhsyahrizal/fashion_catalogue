@@ -1,4 +1,4 @@
-var urlBase = 'http://nymarcatalogue.com/js/products.json';
+var urlBase = '../js/products.json';
 // var urlBase = 'http://localhost/NYMAR-1/js/products.json';
 
 // function to add dot (.) in integer for money
