@@ -1,0 +1,5 @@
+# nginx configuration by winginx.com
+
+location / {
+  rewrite ^(.*)$ /$1.html break;
+}
