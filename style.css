@@ -1034,7 +1034,7 @@ footer .icon-socmed .fa {
 }
 
 .contact-area .social-icon .fa:hover, .contact-area .social-icon a:hover {
-	color: #b40000;
+	color: var(--mainColor);
 }
 
 /* End Contact Page */
