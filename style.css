@@ -741,6 +741,12 @@ footer .icon-socmed .fa {
 	padding: 0 7px !important;
 }
 
+.product-items .card, .product-items .card:focus, .featured-area .card, .featured-area:focus {
+	transition: var(--mainTransition);
+	-moz-transition: var(--mainTransition);
+	-webkit-transition: var(--mainTransition);
+}
+
 .product-items .card:hover, .product-items .card:focus, .featured-area .card:hover, .featured-area:focus {
 	border: 0.5px solid var(--mainColor);
 	box-shadow: 2px 2px 1.5rem var(--boxColor);
