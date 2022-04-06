@@ -1,4 +1,4 @@
-var url = '../js/products.json?v=1.1';
+var url = '../js/products.json?v=1.2';
 // var url = 'http://localhost/NYMAR-1/js/products.json';
 
 // function to add dot (.) in integer for money
