@@ -129,7 +129,7 @@ class UIAll {
     div.innerHTML = `
       <h5>Is'nt any item here ?</h5>
       <img class="my-2" src="../img/cart-plus-solid.svg" height="40px" width="40px" />
-      <h5>Let's add some product</h5>
+      <h5>Let's get some product</h5>
     `;
     if(itemsTotal == 0){
       favContent.appendChild(div);
