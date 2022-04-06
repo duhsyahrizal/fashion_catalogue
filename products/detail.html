@@ -178,8 +178,10 @@
 				let olshopLink = onlineShop.link;
 
 				var olshopLength = 2;
+				var olshop;
 				for(var i=0;i<olshopLength;i++){
-					$('.modal-body #olshop').append('<a href="'+ olshopLink[i] +'" target="_blank" title="Shopee" id="link"><img src="../'+ olshopImage[i] +'" class="mp-img"></a>');
+					olshop = i == 0 ? 'Shopee' : 'Tokopedia'
+					$('.modal-body #olshop').append('<a href="'+ olshopLink[i] +'" target="_blank" title="'+olshop+'" id="link"><img src="../'+ olshopImage[i] +'" class="mp-img"></a>');
 				}
 			}
 		}
