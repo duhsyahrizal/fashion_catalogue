@@ -1,11 +1,9 @@
-# mod_rewrite
+root /var/www/html/levronka;
 
-RewriteEngine on
-
-RewriteCond %{REQUEST_FILENAME}\.html -f
-
-RewriteRule ^(.*)$ $1.html [NC,L]
-
-<IfModule mod_headers.c>
-Header set Access-Control-Allow-Origin "*"
-</IfModule>
+location / {
+    try_files $uri @rewrite;
+}
+location @rewrite {
+    rewrite ^(.*[^/])$ $1/ permanent;
+    rewrite ^(.*)/$ $1.html break;
+}
