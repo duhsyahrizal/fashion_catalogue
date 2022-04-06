@@ -105,11 +105,11 @@
       <?php 
         if ($status == 1){
           echo '<h3 class="poppins" id="title-mobile">'.$newValue.'</h3>';
-          echo '<div class="recent-page"><a href="http://nymarcatalogue.com"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
+          echo '<div class="recent-page"><a href="/"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
         }
         else {
           echo '<h3 class="poppins" id="title-mobile">'.$newValue.'</h3>';
-          echo '<div class="recent-page"><a href="http://nymarcatalogue.com"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
+          echo '<div class="recent-page"><a href="/"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
         }
       ?>
 			</div>
