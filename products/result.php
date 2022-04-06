@@ -230,7 +230,7 @@
 	
   <!-- JavaScript -->
   <script src="../js/script.js"></script>
-  <script src="../js/favorite_item.js"></script>
+  <script src="../js/favorite_item.js?v=1.1"></script>
 	<script src="/js/app.js?v=1.1"></script>
 	</body>
 </html>
