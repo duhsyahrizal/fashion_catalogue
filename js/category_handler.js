@@ -171,8 +171,6 @@ class UIAll {
       `;
     });
     girlFashion.innerHTML = resultGirl;
-    manFashion.innerHTML = resultMan;
-    kidFashion.innerHTML = resultKid;
     hijabFashion.innerHTML = resultHijab;
     accFashion.innerHTML = resultAcc;
   }

@@ -253,38 +253,6 @@ $('#category-girl').on('click', '#product-id', function() {
   }
 });
 
-$('#category-man').on('click', '#product-id', function() {
-  var target_id = $(this).data('id');
-  url = $(this).attr('href');
-  var page = url.split('?product=');
-  var page_id = page+target_id;
-
-  let products = JSON.parse(localStorage.getItem('products'));
-  for(let product of products){
-    if(target_id == product.product_id){
-      var idContent = product.product_id;
-      localStorage.setItem('pageName', page[1]);
-      localStorage.setItem('idContent', idContent);
-    }
-  }
-});
-
-$('#category-kid').on('click', '#product-id', function() {
-  var target_id = $(this).data('id');
-  url = $(this).attr('href');
-  var page = url.split('?product=');
-  var page_id = page+target_id;
-
-  let products = JSON.parse(localStorage.getItem('products'));
-  for(let product of products){
-    if(target_id == product.product_id){
-      var idContent = product.product_id;
-      localStorage.setItem('pageName', page[1]);
-      localStorage.setItem('idContent', idContent);
-    }
-  }
-});
-
 $('#category-hijab').on('click', '#product-id', function() {
   var target_id = $(this).data('id');
   url = $(this).attr('href');
