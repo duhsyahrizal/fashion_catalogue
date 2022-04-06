@@ -879,7 +879,7 @@ footer .icon-socmed .fa {
 .detail-attr {
 	font-size: 15px !important;
 	font-weight: 500;
-	color: #cc3939;
+	color: var(--mainColor);
 }
 
 .product-area {
