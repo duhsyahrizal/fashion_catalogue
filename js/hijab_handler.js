@@ -1,4 +1,4 @@
-var url = '../js/products.json';
+var url = '../js/products.json?v=1.1';
 
 // function to add dot (.) in integer for money
 function numberWithCommas(x) {
