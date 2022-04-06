@@ -92,7 +92,7 @@ class UIAll {
       <div class="col-lg-7 col-md-6 col-sm-8 col-7 mb-3">
         <h4>${item.title}</h4>
         <h6 class="item-price">IDR. ${moneywithDot}</h6>
-        <div class="item-price"><a href="../products/detail?product=${item.title}?category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
+        <div class="item-price"><a href="../products/detail?product=${item.title}&category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-2 col-2">
         <span><i class="fa fa-trash remove-item" data-id="${item.product_id}"></i></span>

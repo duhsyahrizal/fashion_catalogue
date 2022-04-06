@@ -41,16 +41,16 @@ class UIAll {
         <div class="col mb-4">
           <div class="card">
             <div class="img-container">
-              <a href="detail?product=${product.title}?category=${product.category}" data-id="${product.product_id}" id="product-id">
+              <a href="detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
               <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
               <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
             </div>
             <div class="card-body">
               <div class="product-name">
-                <a href="detail?product=${product.title}?category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
+                <a href="detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
               </div>
               <div class="product-price pb-1 t-bold">
-                <a href="detail?product=${product.title}?category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
+                <a href="detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
               </div>
               <button class="btn-product" id="mobileButton" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
             </div>
@@ -155,7 +155,7 @@ class UIAll {
       <div class="col-lg-7 col-md-6 col-sm-8 col-7 mb-3">
         <h4>${item.title}</h4>
         <h6 class="item-price">IDR. ${moneywithDot}</h6>
-        <div class="item-price"><a href="detail?product=${item.title}?category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
+        <div class="item-price"><a href="detail?product=${item.title}&category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-2 col-2">
         <span><i class="fa fa-trash remove-item" data-id="${item.product_id}"></i></span>
