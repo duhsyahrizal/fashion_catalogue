@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
 	<!-- Favicons -->
-	<link rel="icon" href="../images/favicon.ico">
+	<link rel="icon" href="/assets/logo/logo.png">
 	
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="../style.css">
+	<link rel="stylesheet" href="../style.css?v=1.1">
 
 	<!-- Font Awesome -->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -57,7 +57,7 @@
 						<a class="navbar-brand logo" href="/">
 							<picture>
 								<source srcset="/images/icon.png" media="(max-width: 768px)">
-								<img src="/images/logo-transparent.png" alt="Nymar" height="50">
+								<img src="/assets/logo/logo.png" alt="Nymar" height="60">
 							</picture>
 						</a>
 					</div>
@@ -242,6 +242,6 @@
   <!-- JavaScript -->
   <script src="../js/script.js"></script>
   <script src="../js/favorite_item.js"></script>
-	<script src="../js/app.js"></script>
+	<script src="/js/app.js?v=1.1"></script>
 	</body>
 </html>

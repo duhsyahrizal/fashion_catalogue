@@ -9,9 +9,17 @@ function numberWithCommas(x) {
 }
 
 // preloader handler
-$(document).ready(function() {
-  $('body').addClass('disscroll');
-})
+$(window).on('load', function() {
+  setTimeout(function() {
+      removeLoader()
+  }, 500)
+});
+
+function removeLoader(){
+  $( "#preloader" ).fadeOut(500, function() {
+    $( "#preloader" ).remove();
+  });  
+}
 
 $(window).on('load', function() {
   $('#preloader').delay(1500).fadeOut('slow', function() { $(this).remove(); });

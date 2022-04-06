@@ -1,5 +1,8 @@
 :root {
-	--mainColor: #ce0000;
+	--mainColor: #e1a10c;
+	--boxColor: #e1a10c87;
+	--hoverColor: #ae7f20;
+	--overlayColor: #f3d45355;
 	--mainWhite: #fff;
 	--mainText: #444;
 	--mainGrey: #5e5e5e;
@@ -22,13 +25,13 @@ body {
 }
 
 ::-moz-selection {
-	background: #f30000;
+	background: var(--mainColor);
 	color: #fff;
 	text-shadow: none;
 }
 
 ::selection {
-	background: #f30000;
+	background: var(--mainColor);
 	color: #fff;
   text-shadow: none;
 }
@@ -94,7 +97,7 @@ div#preloader-detail {
 	margin: auto;
 	border: 5px solid #f3f3f3;
   border-radius: 50%;
-  border-top: 5px solid #ce00008e;
+  border-top: 5px solid var(--mainColor);
   width: 50px;
 	height: 50px;
 	-webkit-animation: spin 2s linear infinite;
@@ -116,10 +119,10 @@ div#preloader-detail {
   width: 48px;
 	height: 48px;
 	position: absolute;
-  border: 4px solid #ce0000;
+  border: 4px solid var(--mainColor);
   border-radius: 50%;
   animation: lds-ring 1.25s cubic-bezier(0.25, 0.75, 0.5, 1) infinite;
-  border-color: #ce0000 transparent transparent transparent;
+  border-color: var(--mainColor) transparent transparent transparent;
 }
 .lds-ring div:nth-child(1) {
 	animation-delay: -0.3s;
@@ -225,7 +228,7 @@ div#preloader-detail {
 	right: -4px;
 	padding: 5px 6.5px;
 	border-radius: 50%;
-	background-color: #ee0000;
+	background-color: var(--mainColor);
 	color: var(--mainWhite);
 }
 .notification .text {
@@ -252,7 +255,7 @@ div#preloader-detail {
 	transition: var(--mainTransition);
 	-moz-transition: var(--mainTransition);
 	-webkit-transition: var(--mainTransition);
-	background: rgba(240, 50, 50, 0.5);
+	background: var(--overlayColor);
 	z-index: 99;
 	visibility: hidden;
 }
@@ -358,7 +361,7 @@ div#preloader-detail {
 }
 
 .fav-footer a:hover {
-	color: #980000;
+	color: var(--hoverColor);
 }
 
 .fav-footer .fa {
@@ -370,7 +373,7 @@ div#preloader-detail {
 }
 
 .fav-items a:hover {
-	color: #980000;
+	color: var(--hoverColor);
 }
 
 .fav-footer .banner-btn {
@@ -579,11 +582,11 @@ form {
 }
 
 .carousel-indicators li {
-	border: 1px solid #A80000;
+	border: 1px solid var(--hoverColor);
 }
 
 .carousel-indicators .active {
-	background-color: #A80000;
+	background-color: var(--hoverColor);
 }
 
 /* End Hero image */
@@ -703,7 +706,7 @@ footer .icon-socmed .fa {
 }
 
 .nav .btn-color:hover, .nav .btn-color.active {
-	background-color: #980000;
+	background-color: var(--hoverColor);
 	color: white;
 	text-decoration: none;
 	transition: var(--mainTransition);
@@ -740,7 +743,7 @@ footer .icon-socmed .fa {
 
 .product-items .card:hover, .product-items .card:focus, .featured-area .card:hover, .featured-area:focus {
 	border: 0.5px solid var(--mainColor);
-	box-shadow: 2px 2px 1.5rem #ce000040;
+	box-shadow: 2px 2px 1.5rem var(--boxColor);
 	transition: var(--mainTransition);
 	-moz-transition: var(--mainTransition);
 	-webkit-transition: var(--mainTransition);
@@ -761,7 +764,7 @@ footer .icon-socmed .fa {
 	text-transform: uppercase;
 	border: none;
 	border-radius: 4px;
-	background-color: rgb(255, 0, 0);
+	background-color: var(--mainColor);
 	color: #000;
 	letter-spacing: var(--mainSpacing);
 	transition: var(--mainTransition);
@@ -792,7 +795,7 @@ footer .icon-socmed .fa {
 }
 
 .product-items .btn-product:hover, .featured-area .btn-product:hover {
-	background-color: #980000;
+	background-color: var(--hoverColor);
 }
 
 .product-items .btn-product .fa, .featured-area .btn-product .fa {
@@ -905,7 +908,7 @@ footer .icon-socmed .fa {
 }
 
 .btn-color:hover {
-	background-color: #980000;
+	background-color: var(--hoverColor);
 	color: white;
 	text-decoration: none;
 	transition: var(--mainTransition);
@@ -1106,7 +1109,7 @@ footer .icon-socmed .fa {
 }
 
 .btn-color:hover, .btn-color.active {
-	background-color: #980000;
+	background-color: var(--hoverColor);
 	color: white;
 	text-decoration: none;
 	transition: var(--mainTransition);
@@ -1130,7 +1133,6 @@ footer .icon-socmed .fa {
 	border-bottom-color: var(--mainColor);
 	border-bottom-width: 2px;
 	color: var(--mainColor);
-	transition: var(--mainTransition);
 }
 
 .btn-color-outline {
@@ -1144,6 +1146,10 @@ footer .icon-socmed .fa {
 	text-decoration: none;
 	text-transform: uppercase;
 	letter-spacing: var(--mainSpacing);
+	-webkit-transition: var(--mainTransition);
+	-moz-transition: var(--mainTransition);
+	-o-transition: var(--mainTransition);
+	transition: var(--mainTransition);
 }
 
 .btn-color-outline:hover {
@@ -1153,13 +1159,14 @@ footer .icon-socmed .fa {
 	text-decoration: none;
 	-webkit-transition: var(--mainTransition);
 	-moz-transition: var(--mainTransition);
+	-o-transition: var(--mainTransition);
 	transition: var(--mainTransition);
 }
 
 .btn-color-d {
-	background-color: #CE0000;
+	background-color: var(--mainColor);
 	border-radius: 0px;
-	border: 1px solid #CE0000;
+	border: 1px solid var(--mainColor);
 	font-size: 22px;
 	padding: 6px;
 	width: 64px;
@@ -1175,15 +1182,15 @@ footer .icon-socmed .fa {
 }
 
 .btn-color-d:hover {
-	background-color: #A80000;
-	border: 1px solid #A80000;
+	background-color: var(--hoverColor);
+	border: 1px solid var(--hoverColor);
 	text-decoration: none;
 }
 .btn-color-outline-d {
 	background-color: #FAFAFA;
-	border: 1px solid #CE0000;
+	border: 1px solid var(--mainColor);
 	border-radius: 0px;
-	color: #CE0000;
+	color: var(--mainColor);
 	padding: 6px;
 	font-size: 22px;
 	width: 64px;
@@ -1192,8 +1199,8 @@ footer .icon-socmed .fa {
 }
 
 .btn-color-outline-d:hover {
-	background-color: #A80000;
-	border: 1px solid #A80000;
+	background-color: var(--hoverColor);
+	border: 1px solid var(--hoverColor);
 	color: white;
 	text-decoration: none;
 }
@@ -1214,13 +1221,13 @@ footer .icon-socmed .fa {
 
 .btn-color-link-u:hover {
 	text-decoration: none;
-	border-bottom: 2px solid #CE0000;
-	color: #CE0000;
+	border-bottom: 2px solid var(--mainColor);
+	color: var(--mainColor);
 }
 .btn-color-link-u.active {
 	text-decoration: none;
-	border-bottom: 2px solid #CE0000;
-	color: #CE0000;
+	border-bottom: 2px solid var(--mainColor);
+	color: var(--mainColor);
 }
 
 /* End Element Button */
