@@ -3,7 +3,13 @@ root /var/www/html/levronka;
 location / {
     try_files $uri @rewrite;
 }
+
 location @rewrite {
     rewrite ^(.*[^/])$ $1/ permanent;
     rewrite ^(.*)/$ $1.html break;
+}
+
+location ~* \.(css|js)$ {
+    etag on;
+    add_header Cache-Control "no-cache";
 }
