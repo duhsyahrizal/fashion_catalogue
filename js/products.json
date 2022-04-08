@@ -1,583 +1,4 @@
 {
-    "featured": [
-        {
-            "product_id": "g001",
-            "category": "girl fashion",
-            "girl": "true",
-            "title": "Brown Long Skirt",
-            "desc": "Brown Long Skirt adalah produk ternama dari Nymar Catalogue dengan ciri khas warna seperti macan dan bahannya dengan kualitas terbaik.",
-            "attr": "M,L,XL",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 250000,
-            "image_thumb": "img/brown-sk.png",
-            "image": "img/brown-sk@2x.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "g002",
-            "category": "girl fashion",
-            "girl": "true",
-            "title": "Silk Outfit",
-            "desc": "Silk Outfit adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
-            "attr": "M,L,XL",
-            "color": "Satu warna",
-            "price": 300000,
-            "image_thumb": "img/silk-outfit.png",
-            "image": "img/silk-outfit@2x.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "g003",
-            "category": "girl fashion",
-            "girl": "true",
-            "title": "Pink Silk Skirt",
-            "desc": "Produk ternama dari Nymar Catalogue dengan ciri khas warna dan bahannya. Bahan yang dibuat dari katun alami dengan kualitas terbaik.",
-            "attr": "M,L,XL",
-            "color": "Satu warna",
-            "price": 175000,
-            "image_thumb": "img/pink-sk.png",
-            "image": "img/pink-sk@2x.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "g004",
-            "category": "girl fashion",
-            "girl": "true",
-            "title": "Cute Dress",
-            "desc": "Cute Dress adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
-            "attr": "L,XL",
-            "color": "Satu warna",
-            "price": 150000,
-            "image_thumb": "img/cute-dress.png",
-            "image": "img/cute-dress@2x.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "m001",
-            "category": "man fashion",
-            "man": "true",
-            "title": "Blue Air Shoes",
-            "desc": "",
-            "attr": "36-45",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 250000,
-            "image": "img/blue-air-sho@2x.png",
-            "image_thumb": "img/blue-air-sho.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "m002",
-            "category": "man fashion",
-            "man": "true",
-            "title": "Maroon Shirt",
-            "desc": "",
-            "attr": "M,L,XL",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 175000,
-            "image": "img/maroon-shirt@2x.png",
-            "image_thumb": "img/maroon-shirt.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "m003",
-            "category": "man fashion",
-            "man": "true",
-            "title": "Brown Skin Watch",
-            "desc": "",
-            "attr": "",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 125000,
-            "image": "img/brown-watch@2x.png",
-            "image_thumb": "img/brown-watch.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "m004",
-            "category": "man fashion",
-            "man": "true",
-            "title": "All Set Fashion",
-            "desc": "",
-            "attr": "",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 150000,
-            "image": "img/all-set-man@2x.png",
-            "image_thumb": "img/all-set-man.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "k001",
-            "category": "kid fashion",
-            "kid": "true",
-            "title": "Grey Shirt",
-            "desc": "",
-            "attr": "S,M,L",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 120000,
-            "image": "img/gray-sh@2x.png",
-            "image_thumb": "img/gray-sh.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "k002",
-            "category": "kid fashion",
-            "kid": "true",
-            "title": "White Outfit",
-            "desc": "",
-            "attr": "S,M,L",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 150000,
-            "image": "img/white-outfit@2x.png",
-            "image_thumb": "img/white-outfit.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "k003",
-            "category": "kid fashion",
-            "kid": "true",
-            "title": "Trend Black Shirt for Kid",
-            "desc": "",
-            "attr": "S,M,L",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 155000,
-            "image": "img/black-dot-shirt@2x.png",
-            "image_thumb": "img/black-dot-shirt.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "k004",
-            "category": "kid fashion",
-            "kid": "true",
-            "title": "Jacket & Long Pants Nike",
-            "desc": "",
-            "attr": "S,M,L",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 350000,
-            "image": "img/set-nike-boy@2x.png",
-            "image_thumb": "img/set-nike-boy.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "h001",
-            "category": "hijab",
-            "hijab": "true",
-            "title": "Green Hijab",
-            "desc": "Green Hijab adalah produk hijab dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",
-            "attr": "S,M,L,XL",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 125000,
-            "image": "img/green-hijab@2x.png",
-            "image_thumb": "img/green-hijab.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "h002",
-            "category": "hijab",
-            "hijab": "true",
-            "title": "Hijab Saudia",
-            "desc": "Hijab Saudia adalah produk hijab dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
-            "attr": "M,L,XL",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 150000,
-            "image": "img/hijab-saudia@2x.png",
-            "image_thumb": "img/hijab-saudia.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "h003",
-            "category": "hijab",
-            "hijab": "true",
-            "title": "Orange Hijab",
-            "desc": "Orange Hijab adalah produk hijab ternama dari Nymar Catalogue dengan warna orange yang unik dan cocok untuk dipakai kapan saja, dimana saja.",
-            "attr": "",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 125000,
-            "image": "img/orange-hijab@2x.png",
-            "image_thumb": "img/orange-hijab.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "h004",
-            "category": "hijab",
-            "hijab": "true",
-            "title": "Pasmina Hijab",
-            "desc": "Pasmina Hijab yaitu produk terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
-            "attr": "",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 200000,
-            "image": "img/pasmina-hijab@2x.png",
-            "image_thumb": "img/pasmina-hijab.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "a001",
-            "category": "accessories",
-            "acc": "true",
-            "title": "Black Elegant Bag",
-            "desc": "Black Elegant Bag adalah produk tas dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",
-            "attr": "S,M,L,XL",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 250000,
-            "image": "img/black-elegant-bag@2x.png",
-            "image_thumb": "img/black-elegant-bag.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "a002",
-            "category": "accessories",
-            "acc": "true",
-            "title": "Brown Skin Bag",
-            "desc": "Brown Skin Bag adalah produk tas dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
-            "attr": "M,L,XL",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 270000,
-            "image": "img/brown-skin-bag@2x.png",
-            "image_thumb": "img/brown-skin-bag.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "a003",
-            "category": "accessories",
-            "acc": "true",
-            "title": "Cool Sun Glasses",
-            "desc": "Cool Sun Glasses adalah produk kacamata ternama dari Nymar Catalogue dengan warna orange yang unik dan cocok untuk dipakai kapan saja, dimana saja.",
-            "attr": "",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 300000,
-            "image": "img/cool-sun-glasses@2x.png",
-            "image_thumb": "img/cool-sun-glasses.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        },
-        {
-            "product_id": "a004",
-            "category": "accessories",
-            "acc": "true",
-            "title": "Fashionist Blue Bag",
-            "desc": "Fashionist Blue Bag adalah produk tas terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
-            "attr": "",
-            "detail": "Simpan di tempat bersih",
-            "color": "Satu warna",
-            "price": 280000,
-            "image": "img/fashionist-blue-bag@2x.png",
-            "image_thumb": "img/fashionist-blue-bag.png",
-            "image_picker": [
-                "images/image-4.png",
-                "images/image-3.png",
-                "images/image-2.png",
-                "images/image-1.png"
-            ],
-            "olshop": {
-                "image": [
-                    "images/shopee.png",
-                    "images/tokopedia.png"
-                ],
-                "link": [
-                    "https://tokopedia.com/levronkaofficial",
-                    "https://shopee.co.id/levronkaofficial"
-                ]
-            }
-        }
-    ],
     "newest": [
         {
             "product_id": "a005",
@@ -588,6 +9,7 @@
             "detail": "Simpan di tempat bersih",
             "color": "Satu warna",
             "price": 200000,
+            "tag": "new",
             "image": "img/fashion-sun-glasses@2x.png",
             "image_thumb": "img/fashion-sun-glasses.png",
             "image_picker": [
@@ -616,6 +38,7 @@
             "detail": "Simpan di tempat bersih",
             "color": "Satu warna",
             "price": 235000,
+            "tag": "new",
             "image": "img/flower-bag@2x.png",
             "image_thumb": "img/flower-bag.png",
             "image_picker": [
@@ -644,6 +67,7 @@
             "detail": "Simpan di tempat bersih",
             "color": "Satu warna",
             "price": 120000,
+            "tag": "new",
             "image": "img/trendy-necklace@2x.png",
             "image_thumb": "img/trendy-necklace.png",
             "image_picker": [
@@ -672,8 +96,38 @@
             "detail": "Simpan di tempat bersih",
             "color": "Satu warna",
             "price": 325000,
+            "tag": "hot",
             "image": "img/red-bag@2x.png",
             "image_thumb": "img/red-bag.png",
+            "image_picker": [
+                "images/image-4.png",
+                "images/image-3.png",
+                "images/image-2.png",
+                "images/image-1.png"
+            ],
+            "olshop": {
+                "image": [
+                    "images/shopee.png",
+                    "images/tokopedia.png"
+                ],
+                "link": [
+                    "https://tokopedia.com/levronkaofficial",
+                    "https://shopee.co.id/levronkaofficial"
+                ]
+            }
+        },
+        {
+            "product_id": "a004",
+            "category": "accessories",
+            "title": "Fashionist Blue Bag",
+            "desc": "Fashionist Blue Bag adalah produk tas terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
+            "attr": "",
+            "detail": "Simpan di tempat bersih",
+            "color": "Satu warna",
+            "price": 280000,
+            "tag": "new",
+            "image": "img/fashionist-blue-bag@2x.png",
+            "image_thumb": "img/fashionist-blue-bag.png",
             "image_picker": [
                 "images/image-4.png",
                 "images/image-3.png",

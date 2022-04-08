@@ -42,9 +42,19 @@ class UIAll {
       var money = product.price;
 		  // get function numberWithCommas
 		  let moneywithDot = numberWithCommas((money));
+      let ribbon = product.tag == '' || product.tag === null ? 'd-none' : null;
+      let color = 'gold';
+      if(product.tag == 'hot') {
+        color = 'bg-primary';
+      } else if(product.tag == 'sale') {
+        color = 'bg-success';
+      } 
       result += `
       <div class="col mb-4">
         <div class="card">
+          <div class="ribbon-wrapper `+ ribbon +`">
+              <div class="ribbon `+color+`">${product.tag}</div>
+          </div>
           <div class="img-container">
             <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
             <img src="${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
