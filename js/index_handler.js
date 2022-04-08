@@ -55,7 +55,7 @@ class UIAll {
           <div class="ribbon-wrapper `+ ribbon +`">
               <div class="ribbon `+color+`">${product.tag}</div>
           </div>
-          <div class="img-container">
+          <div class="img-container w-100">
             <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
             <img src="${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
             <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>

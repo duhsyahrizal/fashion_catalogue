@@ -52,7 +52,7 @@ class UIAll {
       resultGirl += `
       <div class="col mb-4">
           <div class="card">
-            <div class="img-container">
+            <div class="img-container w-100">
               <a href="detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
               <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
               <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
