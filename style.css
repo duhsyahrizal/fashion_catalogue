@@ -470,23 +470,76 @@ form {
 
 /* Sidenav */
 
+ul.social {
+	display: flex;
+	list-style: none;
+	padding: 0;
+	position: fixed;
+	bottom: 0;
+	left: 24px;
+}
+
+ul.social li {
+	margin: 8px;
+}
+
+ul.social li a {
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3 ease-in-out;
+	-webkit-transition: all 0.3 ease-in-out;
+}
+
+ul.social li a:hover {
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3 ease-in-out;
+	-webkit-transition: all 0.3 ease-in-out;
+}
+
+ul.social li i {
+	font-size: 20px !important;
+}
+
+.animate-menu {
+  display: inline-block;
+  position: relative;
+  color: var(--mainColor);
+}
+
+.animate-menu:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: var(--mainColor);
+  transform-origin: bottom right;
+  transition: transform 0.35s ease-out;
+}
+
+.animate-menu:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 .sidenav {
 	height: 100%;
 	width: 100%;
 	position: fixed;
-	z-index: 99;
+	z-index: 1;
 	top: 0;
 	left: 0;
 	background-color: #FEFEFE;
 	overflow: hidden;
-	transition: var(--mainTransition);
+	text-transform: uppercase;
+	transition: transform 0.4s ease-in-out;
 	-moz-transition: var(--mainTransition);
 	-webkit-transition: var(--mainTransition);
 	padding: 40px 60px 0 32px;
 	transform: translateX(-100%);
 	-moz-transform: translateX(-100%);
 	-webkit-transform: translate(-100%);
-	letter-spacing: var(--mainSpacing);
 }
 
 .showNav {
@@ -494,19 +547,36 @@ form {
 	-moz-transform: translateX(0);
 	-webkit-transform: translateX(0);
 }
-  
+
 .sidenav a {
-	text-decoration: none;
-	padding: 4px 0;
 	color: #555555;
-	display: block;
+}
+
+.sidenav a:hover {
+	color: var(--mainColor);
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3 ease-in-out;
+	-webkit-transition: all 0.3 ease-in-out;
+}
+
+.sidenav ul.menu-list {
+	list-style: none;
+}
+
+.sidenav ul.menu-list li a {
+	text-decoration: none;
+	padding: 6px 0;
+	color: #555555;
 	transition: all 0.3s ease-in-out;
 	-moz-transition: all 0.3 ease-in-out;
 	-webkit-transition: all 0.3 ease-in-out;
 }
   
-.sidenav a:hover {
+.sidenav ul.menu-list li a:hover {
 	color: var(--mainColor);
+	transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3 ease-in-out;
+	-webkit-transition: all 0.3 ease-in-out;
 }
 
 .sidenav .collapsible:hover {
@@ -2042,8 +2112,8 @@ footer .icon-socmed .fa {
 		font-size: 20px;
 	}
 	.sidenav {
-		width: 18%;
-		min-width: 18vw;
+		width: 20%;
+		min-width: 20vw;
 	}
 	.sidenav a {
 		font-size: 18px;
