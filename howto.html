@@ -24,6 +24,9 @@
 
 	</head>
 	<body>
+		<div id="preloader">
+			<div class="lds-ring"><div></div><div></div><div></div><div></div></div>
+		</div>
 		<header class="header-area">
 			<nav class="navbar fixed-top scrolling-navbar navbar-light border-bottom shadow-sm bg-white">
 				<div class="container-fluid">
@@ -222,5 +225,11 @@
 	<script src="js/script.js"></script>
 	<script src="js/favorite_item.js?v=1.1"></script>
 	<script src="/js/app.js?v=1.1"></script>
+	<script>
+		$(document).ready(function() {
+			let url = '/coming-soon/';
+			window.location.href=url
+		})
+	</script>
 	</body>
 </html>
