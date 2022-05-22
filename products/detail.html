@@ -125,31 +125,31 @@
 			var money = product.price;
 			// get function numberWithCommas
 			let productPrice = numberWithCommas((money));
-			if(idContent == product.product_id){
-				var categoryName = product.category, imagePath = product.image, imagePosition = product.image_picker, productName = product.title, productDesc = product.desc, productDetail = product.detail, productAttr = product.attr, productColor = product.color, onlineShop = product.olshop;
+			if(idContent == product.id){
+				var categoryName = product.category.name, imagePath = 'http://admin.l-levronka.com/'+product.image, imagePosition = 'http://admin.l-levronka.com/'+product.image_detail_1, productName = product.title, productDesc = product.description, productDetail = product.detail, productAttr = product.attribute, productColor = product.color, onlineShop = product.olshop;
 				
 				// function to add dot (.) in integer for money
 
 				currentPage = $('.current-page #category-page');
 				currentLocMobile = $('#block-mobile #category-page');
 				
-				if(categoryName == 'girl fashion'){
+				if(categoryName == 'Hijab'){
+					currentPage.attr('href', 'hijab');
+					currentPage.text('Hijab');
+					currentLocMobile.attr('href', 'hijab');
+					currentLocMobile.text('Hijab');
+				}
+				else if(categoryName == 'One Set'){
 					currentPage.attr('href', 'one-set');
-					currentPage.text('Girl Fashion');
+					currentPage.text('One Set');
 					currentLocMobile.attr('href', 'one-set');
-					currentLocMobile.text('Girl Fashion');
+					currentLocMobile.text('One Set');
 				}
-				else if(categoryName == 'man fashion'){
-					currentPage.attr('href', 'category-men');
-					currentPage.text('Man Fashion');
-					currentLocMobile.attr('href', 'category-men');
-					currentLocMobile.text('Man Fashion');
-				}
-				else if(categoryName == 'kid fashion'){
-					currentPage.attr('href', 'category-kid');
-					currentPage.text('Kid Fashion');
-					currentLocMobile.attr('href', 'category-kid');
-					currentLocMobile.text('Kid Fashion');
+				else if(categoryName == 'Dress'){
+					currentPage.attr('href', 'dress');
+					currentPage.text('Dress');
+					currentLocMobile.attr('href', 'dress');
+					currentLocMobile.text('Dress');
 				}
 				else if(categoryName == 'hijab'){
 					currentPage.attr('href', 'hijab');
@@ -168,13 +168,28 @@
 				$('.current-page #product-page').text(productName);
 				$('.product-name-mobile').text(productName);
 
-				$('#content-product').html('<div class="col-12 col-sm-12 col-md-6 col-lg-4"><img src="../'+ imagePath +'" class="info-img"></div><div class="col-12 mt-1 position-img px-5" id="position"></div><div class="col-12 col-sm-12 col-md-6 col-lg-4"><h5 class="product-name">'+ productName +'</h5><h5 class="price">Price<h5><div class="detail-attr">IDR. '+ productPrice +'</div><h6 class="mt-2 pt-1">Keterangan</h6><p class="text-attr">'+ productDesc +'</p><div class="container-fluid position"><div class="row justify-content-left img-pick" id="position-desktop"></div></div><h6 class="available mt-3">Tersedia</h6><p class="available text-attr">Shopee, Tokopedia</p><button id="myBtn" type="button" class="btn-color mr-1" data-toggle="modal" data-target="#exampleModal">Checkout</button></div><div class="area-details col-md col-lg-4" id="tabs-detail"><nav><div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="btn-color-link-u active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">RINCIAN</a><a class="btn-color-link-u" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">DETAIL UKURAN</a><a class="btn-color-link-u" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" 	role="tab" aria-controls="nav-contact" aria-selected="true">WARNA</a></div></nav><div class="tab-content text-small" id="nav-tabContent"><div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">'+ productDetail + "<br>Ukuran : " + productAttr + "<br>Warna : "+ productColor +'</div><div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">'+ productAttr +'</div><div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">'+ productColor +'</div></div></div>');
+				$('#content-product').html('<div class="col-12 col-sm-12 col-md-6 col-lg-4"><img src="'+ imagePath +'" class="info-img"></div><div class="col-12 mt-1 position-img px-5" id="position"></div><div class="col-12 col-sm-12 col-md-6 col-lg-4"><h5 class="product-name">'+ productName +'</h5><h5 class="price">Price<h5><div class="detail-attr">IDR. '+ productPrice +'</div><h6 class="mt-2 pt-1">Keterangan</h6><p class="text-attr">'+ productDesc +'</p><div class="container-fluid position"><div class="row justify-content-left img-pick" id="position-desktop"></div></div><h6 class="available mt-3">Tersedia</h6><p class="available text-attr">Shopee, Tokopedia</p><button id="myBtn" type="button" class="btn-color mr-1" data-toggle="modal" data-target="#exampleModal">Checkout</button></div><div class="area-details col-md col-lg-4" id="tabs-detail"><nav><div class="nav nav-tabs" id="nav-tab" role="tablist"><a class="btn-color-link-u active" id="nav-home-tab" data-toggle="tab" href="#nav-home" role="tab" aria-controls="nav-home" aria-selected="true">RINCIAN</a><a class="btn-color-link-u" id="nav-profile-tab" data-toggle="tab" href="#nav-profile" role="tab" aria-controls="nav-profile" aria-selected="true">DETAIL UKURAN</a><a class="btn-color-link-u" id="nav-contact-tab" data-toggle="tab" href="#nav-contact" 	role="tab" aria-controls="nav-contact" aria-selected="true">WARNA</a></div></nav><div class="tab-content text-small" id="nav-tabContent"><div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">'+ productDetail + "<br>Ukuran : " + productAttr + "<br>Warna : "+ productColor +'</div><div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">'+ productAttr +'</div><div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">'+ productColor +'</div></div></div>');
 
-				var imgLength = 4;
-				for(var i=0;i<imgLength;i++){
-					$('#content-product #position').append('<img src="../'+ imagePosition[i] +'" data-id="'+ i +'" class="img-picker pt-1 mx-1">');
-					$('#content-product #position-desktop').append('<a href="#" data-id="'+ i +'"><img class="img-picker" src="../'+ imagePosition[i] +'"></a>');
+				if(product.image_detail_1) {
+					$('#content-product #position').append('<img src="http://admin.l-levronka.com/'+ product.image_detail_1 +'" data-id="1" class="img-picker pt-1 mx-1">');
+					$('#content-product #position-desktop').append('<a href="#" data-id="1"><img class="img-picker" src="http://admin.l-levronka.com/'+ product.image_detail_1 +'"></a>');
+				} 
+
+				if(product.image_detail_2) {
+					$('#content-product #position').append('<img src="http://admin.l-levronka.com/'+ product.image_detail_2 +'" data-id="1" class="img-picker pt-1 mx-1">');
+					$('#content-product #position-desktop').append('<a href="#" data-id="1"><img class="img-picker" src="http://admin.l-levronka.com/'+ product.image_detail_2 +'"></a>');
 				}
+
+				if(product.image_detail_3) {
+					$('#content-product #position').append('<img src="http://admin.l-levronka.com/'+ product.image_detail_3 +'" data-id="1" class="img-picker pt-1 mx-1">');
+					$('#content-product #position-desktop').append('<a href="#" data-id="1"><img class="img-picker" src="http://admin.l-levronka.com/'+ product.image_detail_3 +'"></a>');
+				}
+
+				if(product.image_detail_4) {
+					$('#content-product #position').append('<img src="http://admin.l-levronka.com/'+ product.image_detail_4 +'" data-id="1" class="img-picker pt-1 mx-1">');
+					$('#content-product #position-desktop').append('<a href="#" data-id="1"><img class="img-picker" src="http://admin.l-levronka.com/'+ product.image_detail_4 +'"></a>');
+				}
+				
 				
 				var mainImage = $('#content-product .info-img');
 				$('#content-product').on('click', '.img-picker', function() {
@@ -183,15 +198,9 @@
 				});
 
 				$('.modal-body').html('<div class="container"><div class="row justify-content-center align-items-center" id="olshop"></div></div>');
-				let olshopImage = onlineShop.image;
-				let olshopLink = onlineShop.link;
 
-				var olshopLength = 2;
-				var olshop;
-				for(var i=0;i<olshopLength;i++){
-					olshop = i == 0 ? 'Shopee' : 'Tokopedia'
-					$('.modal-body #olshop').append('<a href="'+ olshopLink[i] +'" target="_blank" title="'+olshop+'" id="link"><img src="../'+ olshopImage[i] +'" class="mp-img"></a>');
-				}
+				$('.modal-body #olshop').append('<a href="'+ product.online_shop_1 +'" target="_blank" title="Shopee" id="link"><img src="/images/shopee.png" class="mp-img"></a>');
+				$('.modal-body #olshop').append('<a href="'+ product.online_shop_2 +'" target="_blank" title="Tokopedia" id="link"><img src="/images/tokopedia.png" class="mp-img"></a>');
 			}
 		}
 		

@@ -2,9 +2,12 @@ var url = '../js/products.json?v=1.3';
 
 // function to add dot (.) in integer for money
 function numberWithCommas(x) {
-	var parts = x.toString().split(".");
-	parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
-	return parts.join(",");
+  // console.log(x)
+	if(x) {
+    var parts = x.toString().split(".");
+    parts[0]=parts[0].replace(/\B(?=(\d{3})+(?!\d))/g,".");
+    return parts.join(",");
+  }
 }
 
 // variables
@@ -37,6 +40,7 @@ class UIAll {
   displayProducts(data){
     let products = data.newest;
     let result = '';
+    fav = Storage.getFav();
 
     products.forEach(product => {
       var money = product.price;
@@ -56,18 +60,18 @@ class UIAll {
               <div class="ribbon `+color+`">${product.tag}</div>
           </div>
           <div class="img-container w-100">
-            <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
-            <img src="${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-            <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
+            <a href="products/detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
+            <img src="`+endpoint+`/${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
+            <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
           </div>
           <div class="card-body">
             <div class="product-name">
-              <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
+              <a href="products/detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
             </div>
             <div class="product-price pb-1 t-bold">
-              <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
+              <a href="products/detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
             </div>
-            <button class="btn-product" id="mobileButton" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
+            <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
           </div>
         </div>
       </div>
@@ -75,143 +79,13 @@ class UIAll {
     });
     productsDOMAll.innerHTML = result;
   }
-  // displayProductFeatured(data){
-  //   let products = data.featured;
-  //   let resultGirl = '';
-  //   let resultMan = '';
-  //   let resultKid = '';
-  //   let resultHijab = '';
-  //   let resultAcc = '';
-
-  //   products.forEach(product => {
-  //     var money = product.price;
-	// 	  // get function numberWithCommas
-  //     let moneywithDot = numberWithCommas((money));
-      
-  //     if(product.girl == 'true'){
-  //       resultGirl += `
-  //       <div class="col mb-4">
-  //         <div class="card">
-  //           <div class="img-container">
-  //             <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
-  //             <img src="${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-  //             <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //           <div class="card-body">
-  //             <div class="product-name">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
-  //             </div>
-  //             <div class="product-price pb-1 t-bold">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
-  //             </div>
-  //             <button class="btn-product" id="mobileButton" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     `;
-  //     featuredGf.innerHTML = resultGirl;
-  //     }
-  //     else if(product.man == 'true'){
-  //       resultMan += `
-  //       <div class="col mb-4">
-  //         <div class="card">
-  //           <div class="img-container">
-  //             <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
-  //             <img src="${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-  //             <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //           <div class="card-body">
-  //             <div class="product-name">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
-  //             </div>
-  //             <div class="product-price pb-1 t-bold">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
-  //             </div>
-  //             <button class="btn-product" id="mobileButton" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     `;
-  //     featuredMf.innerHTML = resultMan;
-  //     }
-  //     else if(product.kid == 'true'){
-  //       resultKid += `
-  //       <div class="col mb-4">
-  //         <div class="card">
-  //           <div class="img-container">
-  //             <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
-  //             <img src="${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-  //             <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //           <div class="card-body">
-  //             <div class="product-name">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
-  //             </div>
-  //             <div class="product-price pb-1 t-bold">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
-  //             </div>
-  //             <button class="btn-product" id="mobileButton" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     `;
-  //     featuredKf.innerHTML = resultKid;
-  //     }
-  //     else if(product.hijab == 'true'){
-  //       resultHijab += `
-  //       <div class="col mb-4">
-  //         <div class="card">
-  //           <div class="img-container">
-  //             <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
-  //             <img src="${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-  //             <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //           <div class="card-body">
-  //             <div class="product-name">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
-  //             </div>
-  //             <div class="product-price pb-1 t-bold">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
-  //             </div>
-  //             <button class="btn-product" id="mobileButton" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     `;
-  //     featuredHijab.innerHTML = resultHijab;
-  //     }
-  //     else if(product.acc == 'true'){
-  //       resultAcc += `
-  //       <div class="col mb-4">
-  //         <div class="card">
-  //           <div class="img-container">
-  //             <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
-  //             <img src="${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-  //             <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //           <div class="card-body">
-  //             <div class="product-name">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
-  //             </div>
-  //             <div class="product-price pb-1 t-bold">
-  //               <a href="products/detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
-  //             </div>
-  //             <button class="btn-product" id="mobileButton" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-  //           </div>
-  //         </div>
-  //       </div>
-  //     `;
-  //     featuredAcc.innerHTML = resultAcc;
-  //     }
-  //   });
-  // }
   // get Buttons dom to add to favorites
   getFavButtons(){
     const buttons = [...document.querySelectorAll('.fav-btn')];
     buttonsDOM = buttons;
     buttons.forEach(button =>{
       let id = button.dataset.id;
-      let inFav = fav.find(item => item.product_id === id);
+      let inFav = fav.find(item => item.id == id);
       if(inFav){
         button.innerText = "In Favorites";
         button.disabled = true;
@@ -237,7 +111,7 @@ class UIAll {
     buttonsMobileDOM = buttonsMobile;
     buttonsMobile.forEach(button =>{
       let id = button.dataset.id;
-      let inFav = fav.find(item => item.product_id === id);
+      let inFav = fav.find(item => item.id == id);
       if(inFav){
         button.innerText = "In Favorites";
         button.disabled = true;
@@ -245,6 +119,7 @@ class UIAll {
       button.addEventListener('click', (event)=>{
         event.target.innerText = "In Favorites";
         event.target.disabled = true;
+        let storage = new Storage;
         // get product from products
         let favItem = {...Storage.getProduct(id), amount: 1};
         // add product to favorites
@@ -296,15 +171,15 @@ class UIAll {
     div.classList.add('row', 'fav-items', 'align-items-center');
     div.innerHTML = `
       <div class="col-lg-3 col-md-3 col-sm-2 col-3 mb-3">
-        <img src="${item.image_thumb}" alt="product">
+        <img src="`+endpoint+`/${item.image_thumb}" alt="product">
       </div>
       <div class="col-lg-7 col-md-6 col-sm-8 col-7 mb-3">
         <h4>${item.title}</h4>
         <h6 class="item-price">IDR. ${moneywithDot}</h6>
-        <div class="item-price"><a href="products/detail?product=${item.title}&category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
+        <div class="item-price"><a href="products/detail?product=${item.title}&category=${item.category.name}" data-id="${item.id}" id="product-id">Checkout</a></div>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-2 col-2">
-        <span><i class="fa fa-trash remove-item" data-id="${item.product_id}"></i></span>
+        <span><i class="fa fa-trash remove-item" data-id="${item.id}"></i></span>
       </div>
     `;
     favContent.appendChild(div);
@@ -344,20 +219,21 @@ class UIAll {
 
   }
   clearFav(){
-    let favItems = fav.map(item => item.product_id);
-    favItems.forEach(product_id => this.removeItem(product_id));
+    let favItems = fav.map(item => item.id);
+    favItems.forEach(id => this.removeItem(id));
     while(favContent.children.length>0){
       favContent.removeChild(favContent.children[0])
     }
     this.hideFav();
   }
-  removeItem(product_id){
-    fav = fav.filter(item => item.product_id !== product_id);
+  removeItem(id){
+    console.log(id)
+    fav = fav.filter(item => item.id != id);
     Storage.saveFav(fav);
     this.setFavValues(fav);
   }
   getSingleButton(id){
-    return buttonsDOM.find(button => button.dataset.id === id);
+    return buttonsDOM.find(button => button.dataset.id == id);
   }
 }
 
@@ -365,8 +241,13 @@ class UIAll {
 class Products {
 	async getProducts(){
 		try {
-			let result = await fetch(url, {cache: 'no-cache'});
-      let data = await result.json();
+			let result = await fetch(endpoint+'/api/product', {
+        headers: {
+          'Authorization': 'Bearer cqKvl7nfVPmEfQpgH5EgIwDLFjAGIJocNc8KY91z',
+        },
+      });
+      let json = await result.json();
+      var data = json.data;
       
       return data;
 		} catch (error){
@@ -381,13 +262,15 @@ class Storage {
   }
   static getProduct(id){
     let products = JSON.parse(localStorage.getItem('products'));
-    return products.find(product => product.product_id === id);
+    let product = products.find(product => product.id == id)
+
+    return product;
   }
   static saveFav(fav){
     localStorage.setItem('fav',JSON.stringify(fav));
   }
   static getFav(){
-    return localStorage.getItem('fav')?JSON.parse(localStorage.getItem('fav')): [];
+    return localStorage.getItem('fav') ? JSON.parse(localStorage.getItem('fav')) : [];
   }
 }
 

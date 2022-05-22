@@ -1,7 +1,7 @@
 {
     "newest": [
         {
-            "product_id": "a005",
+            "id": "a005",
             "category": "accessories",
             "title": "Fashion Sun Glasses",
             "desc": "Fashion Sun Glasses adalah produk kacamata terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -30,7 +30,7 @@
             }
         },
         {
-            "product_id": "a006",
+            "id": "a006",
             "category": "accessories",
             "title": "Cute Flower Bag",
             "desc": "Cute Flower Bag yaitu produk tas dengan corak yang cantik dan terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -59,7 +59,7 @@
             }
         },
         {
-            "product_id": "a007",
+            "id": "a007",
             "category": "accessories",
             "title": "Trendy Necklace",
             "desc": "Trendy Necklace adalah produk kalung dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
@@ -88,7 +88,7 @@
             }
         },
         {
-            "product_id": "a008",
+            "id": "a008",
             "category": "accessories",
             "title": "Red Fashion Bag",
             "desc": "Red Fashion Bag adalah produk tas yang cantik dan unggulan Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",
@@ -117,7 +117,7 @@
             }
         },
         {
-            "product_id": "a004",
+            "id": "a004",
             "category": "accessories",
             "title": "Fashionist Blue Bag",
             "desc": "Fashionist Blue Bag adalah produk tas terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -155,7 +155,7 @@
     ],
     "products": [
         {
-            "product_id": "g001",
+            "id": "g001",
             "category": "girl fashion",
             "title": "Brown Long Skirt",
             "desc": "Brown Long Skirt adalah produk ternama dari Nymar Catalogue dengan ciri khas warna seperti macan dan bahannya dengan kualitas terbaik.",
@@ -183,7 +183,7 @@
             }
         },
         {
-            "product_id": "g002",
+            "id": "g002",
             "category": "girl fashion",
             "title": "Silk Outfit",
             "desc": "Silk Outfit adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
@@ -210,7 +210,7 @@
             }
         },
         {
-            "product_id": "g003",
+            "id": "g003",
             "category": "girl fashion",
             "title": "Pink Silk Skirt",
             "desc": "Pink Silk Skirt adalah Produk ternama dari Nymar Catalogue dengan ciri khas warna dan bahannya. Bahan yang dibuat dari katun alami dengan kualitas terbaik.",
@@ -237,7 +237,7 @@
             }
         },
         {
-            "product_id": "g004",
+            "id": "g004",
             "category": "girl fashion",
             "title": "Cute Dress",
             "desc": "Cute Dress adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
@@ -264,7 +264,7 @@
             }
         },
         {
-            "product_id": "g005",
+            "id": "g005",
             "category": "girl fashion",
             "title": "Blue Bag",
             "desc": "Blue Bag adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
@@ -291,7 +291,7 @@
             }
         },
         {
-            "product_id": "g006",
+            "id": "g006",
             "category": "girl fashion",
             "title": "Pinky Cream Bag",
             "desc": "Pinky Cream Bag adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
@@ -318,7 +318,7 @@
             }
         },
         {
-            "product_id": "g007",
+            "id": "g007",
             "category": "girl fashion",
             "title": "Blue Outfit Girl",
             "desc": "Black Outfit Girl adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
@@ -345,7 +345,7 @@
             }
         },
         {
-            "product_id": "g008",
+            "id": "g008",
             "category": "girl fashion",
             "title": "Shirt Leave The Road",
             "desc": "Shirt Leave The Road adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
@@ -372,7 +372,7 @@
             }
         },
         {
-            "product_id": "g009",
+            "id": "g009",
             "category": "girl fashion",
             "title": "Brown Long Skirt",
             "desc": "Brown Long Skirt adalah produk ternama dari Nymar Catalogue dengan ciri khas warna seperti macan dan bahannya dengan kualitas terbaik.",
@@ -400,7 +400,7 @@
             }
         },
         {
-            "product_id": "g010",
+            "id": "g010",
             "category": "girl fashion",
             "title": "Silk Outfit",
             "desc": "Silk Outfit adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
@@ -427,7 +427,7 @@
             }
         },
         {
-            "product_id": "g011",
+            "id": "g011",
             "category": "girl fashion",
             "title": "Pink Silk Skirt",
             "desc": "Pink Silk Skirt adalah Produk ternama dari Nymar Catalogue dengan ciri khas warna dan bahannya. Bahan yang dibuat dari katun alami dengan kualitas terbaik.",
@@ -454,7 +454,7 @@
             }
         },
         {
-            "product_id": "g012",
+            "id": "g012",
             "category": "girl fashion",
             "title": "Cute Dress",
             "desc": "Cute Dress adalah produk unggulan Nymar Catalogue dengan warna pirang emas dan cocok untuk dipakai ke pesta dan sebagainya.",
@@ -481,7 +481,7 @@
             }
         },
         {
-            "product_id": "m001",
+            "id": "m001",
             "category": "man fashion",
             "title": "Blue Air Shoes",
             "desc": "Blue Air Shoes adalah produk unggulan Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",
@@ -509,7 +509,7 @@
             }
         },
         {
-            "product_id": "m002",
+            "id": "m002",
             "category": "man fashion",
             "title": "Maroon Shirt",
             "desc": "Maroon Shirt adalah produk unggulan Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
@@ -537,7 +537,7 @@
             }
         },
         {
-            "product_id": "m003",
+            "id": "m003",
             "category": "man fashion",
             "title": "Brown Skin Watch",
             "desc": "Brown Skin Watch adalah produk jam ternama dari Nymar Catalogue dengan warna coklat kulit dan cocok untuk dipakai kapan saja, dimana saja.",
@@ -565,7 +565,7 @@
             }
         },
         {
-            "product_id": "m004",
+            "id": "m004",
             "category": "man fashion",
             "title": "All Set Fashion",
             "desc": "All Set Fashion yaitu produk terpilih untuk pria dari Nymar Catalogue dengan kualitas terbaik.",
@@ -593,7 +593,7 @@
             }
         },
         {
-            "product_id": "m005",
+            "id": "m005",
             "category": "man fashion",
             "title": "All Set Fashion",
             "desc": "All Set Fashion yaitu produk terpilih untuk pria dari Nymar Catalogue dengan kualitas terbaik.",
@@ -621,7 +621,7 @@
             }
         },
         {
-            "product_id": "m006",
+            "id": "m006",
             "category": "man fashion",
             "title": "Brown Skin Watch",
             "desc": "Brown Skin Watch adalah produk jam ternama dari Nymar Catalogue dengan warna coklat kulit dan cocok untuk dipakai kapan saja, dimana saja.",
@@ -649,7 +649,7 @@
             }
         },
         {
-            "product_id": "m007",
+            "id": "m007",
             "category": "man fashion",
             "title": "Maroon Shirt",
             "desc": "Maroon Shirt adalah produk unggulan Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
@@ -677,7 +677,7 @@
             }
         },
         {
-            "product_id": "m008",
+            "id": "m008",
             "category": "man fashion",
             "title": "Blue Air Shoes",
             "desc": "Blue Air Shoes adalah produk unggulan Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",
@@ -705,7 +705,7 @@
             }
         },
         {
-            "product_id": "k001",
+            "id": "k001",
             "category": "kid fashion",
             "title": "Grey Shirt",
             "desc": "",
@@ -733,7 +733,7 @@
             }
         },
         {
-            "product_id": "k002",
+            "id": "k002",
             "category": "kid fashion",
             "title": "White Outfit",
             "desc": "",
@@ -761,7 +761,7 @@
             }
         },
         {
-            "product_id": "k003",
+            "id": "k003",
             "category": "kid fashion",
             "title": "Trend Black Shirt for Kid",
             "desc": "",
@@ -789,7 +789,7 @@
             }
         },
         {
-            "product_id": "k004",
+            "id": "k004",
             "category": "kid fashion",
             "title": "Jacket & Long Pants Nike",
             "desc": "",
@@ -817,7 +817,7 @@
             }
         },
         {
-            "product_id": "k005",
+            "id": "k005",
             "category": "kid fashion",
             "title": "Jacket & Long Pants Nike",
             "desc": "",
@@ -845,7 +845,7 @@
             }
         },
         {
-            "product_id": "k006",
+            "id": "k006",
             "category": "kid fashion",
             "title": "Trend Black Shirt for Kid",
             "desc": "",
@@ -873,7 +873,7 @@
             }
         },
         {
-            "product_id": "k007",
+            "id": "k007",
             "category": "kid fashion",
             "title": "White Outfit",
             "desc": "",
@@ -901,7 +901,7 @@
             }
         },
         {
-            "product_id": "k008",
+            "id": "k008",
             "category": "kid fashion",
             "title": "Grey Shirt",
             "desc": "",
@@ -929,7 +929,7 @@
             }
         },
         {
-            "product_id": "k009",
+            "id": "k009",
             "category": "kid fashion",
             "title": "Grey Shirt",
             "desc": "",
@@ -957,7 +957,7 @@
             }
         },
         {
-            "product_id": "k010",
+            "id": "k010",
             "category": "kid fashion",
             "title": "White Outfit",
             "desc": "",
@@ -985,7 +985,7 @@
             }
         },
         {
-            "product_id": "k011",
+            "id": "k011",
             "category": "kid fashion",
             "title": "Trend Black Shirt for Kid",
             "desc": "",
@@ -1013,7 +1013,7 @@
             }
         },
         {
-            "product_id": "k012",
+            "id": "k012",
             "category": "kid fashion",
             "title": "Jacket & Long Pants Nike",
             "desc": "",
@@ -1041,7 +1041,7 @@
             }
         },
         {
-            "product_id": "h001",
+            "id": "h001",
             "category": "hijab",
             "title": "Green Hijab",
             "desc": "Green Hijab adalah produk hijab dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",
@@ -1069,7 +1069,7 @@
             }
         },
         {
-            "product_id": "h002",
+            "id": "h002",
             "category": "hijab",
             "title": "Hijab Saudia",
             "desc": "Hijab Saudia adalah produk hijab dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
@@ -1097,7 +1097,7 @@
             }
         },
         {
-            "product_id": "h003",
+            "id": "h003",
             "category": "hijab",
             "title": "Orange Hijab",
             "desc": "Orange Hijab adalah produk hijab ternama dari Nymar Catalogue dengan warna orange yang unik dan cocok untuk dipakai kapan saja, dimana saja.",
@@ -1125,7 +1125,7 @@
             }
         },
         {
-            "product_id": "h004",
+            "id": "h004",
             "category": "hijab",
             "title": "Pasmina Hijab",
             "desc": "Pasmina Hijab yaitu produk terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -1153,7 +1153,7 @@
             }
         },
         {
-            "product_id": "h005",
+            "id": "h005",
             "category": "hijab",
             "title": "Pink Hijab",
             "desc": "Pink Hijab yaitu produk terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -1181,7 +1181,7 @@
             }
         },
         {
-            "product_id": "h006",
+            "id": "h006",
             "category": "hijab",
             "title": "Semi Pasmina Hijab",
             "desc": "Semi Pasmina Hijab yaitu produk terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -1209,7 +1209,7 @@
             }
         },
         {
-            "product_id": "h007",
+            "id": "h007",
             "category": "hijab",
             "title": "White Hijab",
             "desc": "White Hijab adalah produk unggulan Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
@@ -1237,7 +1237,7 @@
             }
         },
         {
-            "product_id": "h008",
+            "id": "h008",
             "category": "hijab",
             "title": "Black Hijab",
             "desc": "Black Hijab adalah produk unggulan Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",
@@ -1265,7 +1265,7 @@
             }
         },
         {
-            "product_id": "a001",
+            "id": "a001",
             "category": "accessories",
             "title": "Black Elegant Bag",
             "desc": "Black Elegant Bag adalah produk tas dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",
@@ -1293,7 +1293,7 @@
             }
         },
         {
-            "product_id": "a002",
+            "id": "a002",
             "category": "accessories",
             "title": "Brown Skin Bag",
             "desc": "Brown Skin Bag adalah produk tas dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
@@ -1321,7 +1321,7 @@
             }
         },
         {
-            "product_id": "a003",
+            "id": "a003",
             "category": "accessories",
             "title": "Cool Sun Glasses",
             "desc": "Cool Sun Glasses adalah produk kacamata ternama dari Nymar Catalogue dengan warna orange yang unik dan cocok untuk dipakai kapan saja, dimana saja.",
@@ -1349,7 +1349,7 @@
             }
         },
         {
-            "product_id": "a004",
+            "id": "a004",
             "category": "accessories",
             "title": "Fashionist Blue Bag",
             "desc": "Fashionist Blue Bag adalah produk tas terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -1377,7 +1377,7 @@
             }
         },
         {
-            "product_id": "a005",
+            "id": "a005",
             "category": "accessories",
             "title": "Fashion Sun Glasses",
             "desc": "Fashion Sun Glasses adalah produk kacamata terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -1405,7 +1405,7 @@
             }
         },
         {
-            "product_id": "a006",
+            "id": "a006",
             "category": "accessories",
             "title": "Cute Flower Bag",
             "desc": "Cute Flower Bag yaitu produk tas dengan corak yang cantik dan terpilih untuk wanita yang suka tampil cantik. produk ini dari Nymar Catalogue dengan kualitas terbaik.",
@@ -1433,7 +1433,7 @@
             }
         },
         {
-            "product_id": "a007",
+            "id": "a007",
             "category": "accessories",
             "title": "Trendy Necklace",
             "desc": "Trendy Necklace adalah produk kalung dari Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai pesta, perusahaan dan sebagainya.",
@@ -1461,7 +1461,7 @@
             }
         },
         {
-            "product_id": "a008",
+            "id": "a008",
             "category": "accessories",
             "title": "Red Fashion Bag",
             "desc": "Red Fashion Bag adalah produk tas yang cantik dan unggulan Nymar Catalogue dengan brand terkenal dan cocok untuk dipakai bermain.",

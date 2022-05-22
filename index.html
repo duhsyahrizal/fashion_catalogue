@@ -25,7 +25,6 @@
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 
     <title>Levronka - Local Product</title>
-
 	</head>
 	<body>
 		<div id="preloader">
@@ -219,13 +218,16 @@
 
 	<!-- JavaScript -->
 	<script id="style" src="/js/script.js"></script>
-	<script id="page" src="/js/index_handler.js?v=1.2"></script>
-	<script id="main" src="/js/app.js"></script>
+	<script id="page" src="/js/index_handler.js?v=1.5"></script>
+	<script id="main" src="/js/app.js?v=1.1"></script>
 	<script>
 		$("#main").attr("src", "/js/app.js?q="+ Date.now())
 		$("#page").attr("src", "/js/index_handler.js?q="+ Date.now())
 		$("#style").attr("src", "/js/script.js?q="+ Date.now())
 		$("#mainStyle").attr("href", "/style.css?q="+ Date.now())
+		$.get(endpoint+'/api/user/visit', { location: 'home'}, function(data) {
+        // do code
+      });
 	</script>
 </body>
 </html>

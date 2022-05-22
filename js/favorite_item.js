@@ -1,5 +1,4 @@
 var url = '../js/products.json?v=1.2';
-// var url = 'http://localhost/NYMAR-1/js/products.json';
 
 // function to add dot (.) in integer for money
 function numberWithCommas(x) {
@@ -33,7 +32,7 @@ class UIAll {
     buttonsDOM = buttons;
     buttons.forEach(button =>{
       let id = button.dataset.id;
-      let inFav = fav.find(item => item.product_id === id);
+      let inFav = fav.find(item => item.id === id);
       if(inFav){
         button.innerText = "In Favorites";
         button.disabled = true;
@@ -87,15 +86,15 @@ class UIAll {
     div.classList.add('row', 'fav-items', 'align-items-center');
     div.innerHTML = `
       <div class="col-lg-3 col-md-3 col-sm-2 col-3 mb-3">
-        <img src="../${item.image_thumb}" alt="product">
+        <img src="`+endpoint+`/${item.image_thumb}" alt="product">
       </div>
       <div class="col-lg-7 col-md-6 col-sm-8 col-7 mb-3">
         <h4>${item.title}</h4>
         <h6 class="item-price">IDR. ${moneywithDot}</h6>
-        <div class="item-price"><a href="../products/detail?product=${item.title}&category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
+        <div class="item-price"><a href="../products/detail?product=${item.title}&category=${item.category.name}" data-id="${item.id}" id="product-id">Checkout</a></div>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-2 col-2">
-        <span><i class="fa fa-trash remove-item" data-id="${item.product_id}"></i></span>
+        <span><i class="fa fa-trash remove-item" data-id="${item.id}"></i></span>
       </div>
     `;
     favContent.appendChild(div);
@@ -135,16 +134,16 @@ class UIAll {
 
   }
   clearFav(){
-    let favItems = fav.map(item => item.product_id);
-    favItems.forEach(product_id => this.removeItem(product_id));
+    let favItems = fav.map(item => item.id);
+    favItems.forEach(id => this.removeItem(id));
     console.log(favContent.children);
     while(favContent.children.length>0){
       favContent.removeChild(favContent.children[0])
     }
     this.hideFav();
   }
-  removeItem(product_id){
-    fav = fav.filter(item => item.product_id !== product_id);
+  removeItem(id){
+    fav = fav.filter(item => item.id !== id);
     Storage.saveFav(fav);
     this.setFavValues(fav);
   }
@@ -157,8 +156,9 @@ class UIAll {
 class Products {
 	async getProducts(){
 		try {
-			let result = await fetch(url);
-      let data = await result.json();
+			let result = await fetch('http://admin.l-levronka.com/api/product', {cache: 'no-cache'});
+      let json = await result.json();
+      var data = json.data;
       
       return data;
 		} catch (error){
@@ -173,7 +173,7 @@ class Storage {
   }
   static getProduct(id){
     let products = JSON.parse(localStorage.getItem('products'));
-    return products.find(product => product.product_id === id);
+    return products.find(product => product.id === id);
   }
   static saveFav(fav){
     localStorage.setItem('fav',JSON.stringify(fav));
@@ -182,6 +182,8 @@ class Storage {
     return localStorage.getItem('fav')?JSON.parse(localStorage.getItem('fav')): [];
   }
 }
+
+console.log(localStorage.getItem('fav'))
 
 document.addEventListener("DOMContentLoaded", () => {
   const ui = new UIAll();

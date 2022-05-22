@@ -37,23 +37,23 @@ class UIAll {
       var money = product.price;
 		  // get function numberWithCommas
 		  let moneywithDot = numberWithCommas((money));
-      if(product.category == 'accessories'){
+      if(product.category.name == 'accessories'){
         result += `
         <div class="col mb-4">
           <div class="card">
             <div class="img-container w-100">
-              <a href="detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">
+              <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
               <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-              <button class="fav-btn" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
+              <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
             </div>
             <div class="card-body">
               <div class="product-name">
-                <a href="detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">${product.title}</a>
+                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
               </div>
               <div class="product-price pb-1 t-bold">
-                <a href="detail?product=${product.title}&category=${product.category}" data-id="${product.product_id}" id="product-id">IDR. ${moneywithDot}</a>
+                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
               </div>
-              <button class="btn-product" id="mobileButton" data-id="${product.product_id}"><i class="fa fa-heart"></i> Add to Favorite</button>
+              <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@ class UIAll {
     buttonsDOM = buttons;
     buttons.forEach(button =>{
       let id = button.dataset.id;
-      let inFav = fav.find(item => item.product_id === id);
+      let inFav = fav.find(item => item.id === id);
       if(inFav){
         button.innerText = "In Favorites";
         button.disabled = true;
@@ -92,7 +92,7 @@ class UIAll {
     buttonsMobileDOM = buttonsMobile;
     buttonsMobile.forEach(button =>{
       let id = button.dataset.id;
-      let inFav = fav.find(item => item.product_id === id);
+      let inFav = fav.find(item => item.id === id);
       if(inFav){
         button.innerText = "In Favorites";
         button.disabled = true;
@@ -156,10 +156,10 @@ class UIAll {
       <div class="col-lg-7 col-md-6 col-sm-8 col-7 mb-3">
         <h4>${item.title}</h4>
         <h6 class="item-price">IDR. ${moneywithDot}</h6>
-        <div class="item-price"><a href="detail?product=${item.title}&category=${item.category}" data-id="${item.product_id}" id="product-id">Checkout</a></div>
+        <div class="item-price"><a href="detail?product=${item.title}&category=${item.category}" data-id="${item.id}" id="product-id">Checkout</a></div>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-2 col-2">
-        <span><i class="fa fa-trash remove-item" data-id="${item.product_id}"></i></span>
+        <span><i class="fa fa-trash remove-item" data-id="${item.id}"></i></span>
       </div>
     `;
     favContent.appendChild(div);
@@ -199,15 +199,15 @@ class UIAll {
 
   }
   clearFav(){
-    let favItems = fav.map(item => item.product_id);
-    favItems.forEach(product_id => this.removeItem(product_id));
+    let favItems = fav.map(item => item.id);
+    favItems.forEach(id => this.removeItem(id));
     while(favContent.children.length>0){
       favContent.removeChild(favContent.children[0])
     }
     this.hideFav();
   }
-  removeItem(product_id){
-    fav = fav.filter(item => item.product_id !== product_id);
+  removeItem(id){
+    fav = fav.filter(item => item.id !== id);
     Storage.saveFav(fav);
     this.setFavValues(fav);
   }
@@ -220,8 +220,13 @@ class UIAll {
 class Products {
 	async getProducts(){
 		try {
-			let result = await fetch(url, {cache: 'no-cache'});
-      let data = await result.json();
+			let result = await fetch(endpoint+'/api/product', {
+        headers: {
+          'Authorization': 'Bearer cqKvl7nfVPmEfQpgH5EgIwDLFjAGIJocNc8KY91z',
+        },
+      });
+      let json = await result.json();
+      var data = json.data;
 
       return data;
 		} catch (error){
@@ -236,7 +241,7 @@ class Storage {
   }
   static getProduct(id){
     let products = JSON.parse(localStorage.getItem('products'));
-    return products.find(product => product.product_id === id);
+    return products.find(product => product.id === id);
   }
   static saveFav(fav){
     localStorage.setItem('fav',JSON.stringify(fav));
