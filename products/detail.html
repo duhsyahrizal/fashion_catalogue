@@ -307,6 +307,12 @@
 		$("#page").attr("src", "/js/favorite_item.js?q="+ Date.now())
 		$("#style").attr("src", "/js/script.js?q="+ Date.now())
 		$("#mainStyle").attr("href", "/style.css?q="+ Date.now())
+		$.ajax({
+				url: endpoint+'/api/user/visit?location=product',
+				headers: {
+          'Authorization': 'Bearer cqKvl7nfVPmEfQpgH5EgIwDLFjAGIJocNc8KY91z',
+        }
+		});
 	</script>
 	</body>
 </html>

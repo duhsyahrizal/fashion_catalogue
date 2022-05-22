@@ -220,6 +220,12 @@
 		$(document).ready(function() {
 			let url = '/coming-soon/';
 			window.location.href=url
+			$.ajax({
+				url: endpoint+'/api/user/visit?location=category',
+				headers: {
+          'Authorization': 'Bearer cqKvl7nfVPmEfQpgH5EgIwDLFjAGIJocNc8KY91z',
+        }
+			});
 		})
 	</script>
 	</body>
