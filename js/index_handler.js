@@ -245,6 +245,7 @@ class Products {
         headers: {
           'Authorization': 'Bearer cqKvl7nfVPmEfQpgH5EgIwDLFjAGIJocNc8KY91z',
         },
+        cache: 'no-cache'
       });
       let json = await result.json();
       var data = json.data;
