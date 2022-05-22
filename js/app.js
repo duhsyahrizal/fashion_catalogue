@@ -1,5 +1,5 @@
 var urlBase = '../js/products.json?v=1.2';
-let endpoint = 'http://admin.l-levronka.com';
+let endpoint = 'https://admin.levronka.com';
 // var urlBase = 'http://localhost/NYMAR-1/js/products.json';
 
 // preloader handler
