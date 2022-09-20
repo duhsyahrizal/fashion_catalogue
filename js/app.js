@@ -8,18 +8,10 @@ $(window).ready(function() {
 });
 
 function removeLoader(){
-  $( "#preloader" ).fadeOut(100, function() {
+  $( "#preloader" ).fadeOut(1000, function() {
     $( "#preloader" ).remove();
   });  
 }
-
-$(window).on('load', function() {
-  $('#preloader').delay(500).fadeOut('slow', function() { $(this).remove(); });
-  $('#preloader-detail').delay(500).fadeOut('slow', function() { $(this).remove(); });
-  setTimeout(() => {
-    $('body').removeClass('disscroll');
-  }, 500);
-});
 
 $('.fav-content').on('click', '#product-id', function (){
   var target_id = $(this).data('id');
