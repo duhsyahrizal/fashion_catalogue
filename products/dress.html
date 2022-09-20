@@ -187,8 +187,6 @@
 		$("#style").attr("src", "/js/script.js?q="+ Date.now())
 		$("#mainStyle").attr("href", "/style.css?q="+ Date.now())
 		$(document).ready(function() {
-			let url = '/coming-soon/';
-			window.location.href=url
 			$.ajax({
 				url: endpoint+'/api/user/visit?location=dress',
 				headers: {
