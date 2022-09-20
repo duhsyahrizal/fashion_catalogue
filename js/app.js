@@ -3,24 +3,22 @@ let endpoint = 'https://admin.levronka.com';
 // var urlBase = 'http://localhost/NYMAR-1/js/products.json';
 
 // preloader handler
-$(window).on('load', function() {
-  setTimeout(function() {
-      removeLoader()
-  }, 500)
+$(window).ready(function() {
+  removeLoader()
 });
 
 function removeLoader(){
-  $( "#preloader" ).fadeOut(500, function() {
+  $( "#preloader" ).fadeOut(100, function() {
     $( "#preloader" ).remove();
   });  
 }
 
 $(window).on('load', function() {
-  $('#preloader').delay(1500).fadeOut('slow', function() { $(this).remove(); });
-  $('#preloader-detail').delay(2000).fadeOut('slow', function() { $(this).remove(); });
+  $('#preloader').delay(500).fadeOut('slow', function() { $(this).remove(); });
+  $('#preloader-detail').delay(500).fadeOut('slow', function() { $(this).remove(); });
   setTimeout(() => {
     $('body').removeClass('disscroll');
-  }, 1500);
+  }, 500);
 });
 
 $('.fav-content').on('click', '#product-id', function (){

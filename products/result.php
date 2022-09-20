@@ -239,6 +239,6 @@
   <!-- JavaScript -->
   <script src="../js/script.js"></script>
   <script src="../js/favorite_item.js?v=1.2"></script>
-	<script src="/js/app.js?v=1.2"></script>
+	<script src="/js/app.js?v=1.4"></script>
 	</body>
 </html>
