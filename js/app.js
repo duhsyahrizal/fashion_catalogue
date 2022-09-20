@@ -8,8 +8,8 @@ $(window).ready(function() {
 });
 
 function removeLoader(){
-  $( "#preloader" ).fadeOut(1000, function() {
-    $( "#preloader" ).remove();
+  $( "#preloader" ).delay(1000).fadeOut('slow', function() {
+    $(this).remove();
   });  
 }
 
