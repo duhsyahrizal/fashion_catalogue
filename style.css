@@ -814,12 +814,12 @@ footer .icon-socmed .fa {
 
 .recent-page a {
 	color: var(--mainLink);
-	padding: 0 4px !important;
+	padding-right: 4px !important;
 }
 
 .recent-page i {
 	color: var(--mainLink);
-	padding: 0 4px !important;
+	padding-right: 4px !important;
 }
 
 .recent-page a:hover {
