@@ -43,131 +43,83 @@ class UIAll {
     var maxResult = 4;
     var total = data.total;
     
-    products.slice(0,4).forEach(product => {
-      var money = product.price;
-		  // get function numberWithCommas
-      let moneywithDot = numberWithCommas((money));
-      resultGirl += `
-      <div class="col mb-4">
-          <div class="card">
-            <div class="img-container w-100">
-              <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
-              <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-              <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-            </div>
-            <div class="card-body">
-              <div class="product-name">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
+    if(products.length > 0) {
+      products.slice(0,4).forEach(product => {
+        var money = product.price;
+        // get function numberWithCommas
+        let moneywithDot = numberWithCommas((money));
+        resultGirl += `
+        <div class="col mb-4">
+            <div class="card">
+              <div class="img-container w-100">
+                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
+                <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
+                <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
               </div>
-              <div class="product-price pb-1 t-bold">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
+              <div class="card-body">
+                <div class="product-name">
+                  <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
+                </div>
+                <div class="product-price pb-1 t-bold">
+                  <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
+                </div>
+                <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
               </div>
-              <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-            </div>
-          </div>
-        </div>
-      `;
-    });
-    products.slice(12,16).forEach(product => {
-      var money = product.price;
-		  // get function numberWithCommas
-      let moneywithDot = numberWithCommas((money));
-      resultMan += `
-      <div class="col mb-4">
-          <div class="card">
-            <div class="img-container">
-              <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
-              <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-              <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-            </div>
-            <div class="card-body">
-              <div class="product-name">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
-              </div>
-              <div class="product-price pb-1 t-bold">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
-              </div>
-              <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
             </div>
           </div>
-        </div>
-      `;
-    });
-    products.slice(20,24).forEach(product => {
-      var money = product.price;
-		  // get function numberWithCommas
-      let moneywithDot = numberWithCommas((money));
-      resultKid += `
-      <div class="col mb-4">
-          <div class="card">
-            <div class="img-container">
-              <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
-              <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-              <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-            </div>
-            <div class="card-body">
-              <div class="product-name">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
+        `;
+      });
+      products.slice(5,8).forEach(product => {
+        var money = product.price;
+        // get function numberWithCommas
+        let moneywithDot = numberWithCommas((money));
+        resultHijab += `
+        <div class="col mb-4">
+            <div class="card">
+              <div class="img-container">
+                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
+                <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
+                <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
               </div>
-              <div class="product-price pb-1 t-bold">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
+              <div class="card-body">
+                <div class="product-name">
+                  <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
+                </div>
+                <div class="product-price pb-1 t-bold">
+                  <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
+                </div>
+                <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
               </div>
-              <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-            </div>
-          </div>
-        </div>
-      `;
-    });
-    products.slice(32,36).forEach(product => {
-      var money = product.price;
-		  // get function numberWithCommas
-      let moneywithDot = numberWithCommas((money));
-      resultHijab += `
-      <div class="col mb-4">
-          <div class="card">
-            <div class="img-container">
-              <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
-              <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-              <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-            </div>
-            <div class="card-body">
-              <div class="product-name">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
-              </div>
-              <div class="product-price pb-1 t-bold">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
-              </div>
-              <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
             </div>
           </div>
-        </div>
-      `;
-    });
-    products.slice(41,45).forEach(product => {
-      var money = product.price;
-		  // get function numberWithCommas
-      let moneywithDot = numberWithCommas((money));
-      resultAcc += `
-      <div class="col mb-4">
-          <div class="card">
-            <div class="img-container">
-              <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
-              <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
-              <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
-            </div>
-            <div class="card-body">
-              <div class="product-name">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
+        `;
+      });
+      products.slice(9,12).forEach(product => {
+        var money = product.price;
+        // get function numberWithCommas
+        let moneywithDot = numberWithCommas((money));
+        resultAcc += `
+        <div class="col mb-4">
+            <div class="card">
+              <div class="img-container">
+                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">
+                <img src="../${product.image_thumb}" style="width:100%;" class="card-img-top"></a>
+                <button class="fav-btn" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
               </div>
-              <div class="product-price pb-1 t-bold">
-                <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
+              <div class="card-body">
+                <div class="product-name">
+                  <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">${product.title}</a>
+                </div>
+                <div class="product-price pb-1 t-bold">
+                  <a href="detail?product=${product.title}&category=${product.category.name}" data-id="${product.id}" id="product-id">IDR. ${moneywithDot}</a>
+                </div>
+                <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
               </div>
-              <button class="btn-product" id="mobileButton" data-id="${product.id}"><i class="fa fa-heart"></i> Add to Favorite</button>
             </div>
           </div>
-        </div>
-      `;
-    });
+        `;
+      });
+    }
     girlFashion.innerHTML = resultGirl;
     hijabFashion.innerHTML = resultHijab;
     accFashion.innerHTML = resultAcc;
@@ -338,7 +290,8 @@ class Products {
         },
         cache: 'no-cache'
       });
-      let data = await result.json();
+      let json = await result.json();
+      var data = json.data;
 
       return data;
 		} catch (error){
@@ -375,7 +328,7 @@ document.addEventListener("DOMContentLoaded", () => {
       uigf.displayProductCategory(data);
       let products = data.products;
       Storage.saveProducts(products);
-  }).then(()=>{
+  }).then(() => {
     ui.getFavButtons();
     ui.getFavButtonsMobile();
     ui.favLogic();
