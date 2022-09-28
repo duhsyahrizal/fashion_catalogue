@@ -1,6 +1,4 @@
-var urlBase = '../js/products.json?v=1.2';
 let endpoint = 'https://admin.levronka.com';
-// var urlBase = 'http://localhost/NYMAR-1/js/products.json';
 
 // preloader handler
 $(window).ready(function() {
@@ -286,17 +284,17 @@ $('#category-acc').on('click', '#product-id', function() {
 // })
 
 // refresh new data on json every 3 seconds after it changes
-var previous = null;
-var current = null;
-setInterval( function() {
-  $.getJSON(urlBase, function(json) {
-    current = JSON.stringify(json);
-    if(previous && current && previous !== current){
-      console.log('refresh');
-      location.reload();
-    }
-    previous = current;
-  })
-}, 3000);
+// var previous = null;
+// var current = null;
+// setInterval( function() {
+//   $.getJSON(urlBase, function(json) {
+//     current = JSON.stringify(json);
+//     if(previous && current && previous !== current){
+//       console.log('refresh');
+//       location.reload();
+//     }
+//     previous = current;
+//   })
+// }, 3000);
 
 

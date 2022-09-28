@@ -1,4 +1,4 @@
-var url = '../js/products.json?v=1.2';
+let baseDir = window.location.protocol.includes('http') ? window.location.origin + '/levronka/' : window.location.origin + '/'
 
 // function to add dot (.) in integer for money
 function numberWithCommas(x) {
@@ -67,7 +67,7 @@ class UIAll {
     div.classList.add('text-center');
     div.innerHTML = `
       <h5>Is'nt any item here ?</h5>
-      <img class="my-2" src="../img/cart-plus-solid.svg" height="40px" width="40px" />
+      <img class="my-2" src="${baseDir}img/cart-plus-solid.svg" height="40px" width="40px" />
       <h5>Let's get some product</h5>
     `;
     if(tempTotal == 0){
@@ -91,7 +91,7 @@ class UIAll {
       <div class="col-lg-7 col-md-6 col-sm-8 col-7 mb-3">
         <h4>${item.title}</h4>
         <h6 class="item-price">IDR. ${moneywithDot}</h6>
-        <div class="item-price"><a href="../products/detail?product=${item.title}&category=${item.category.name}" data-id="${item.id}" id="product-id">Checkout</a></div>
+        <div class="item-price"><a href="${baseDir}products/detail?product=${item.title}&category=${item.category.name}" data-id="${item.id}" id="product-id">Checkout</a></div>
       </div>
       <div class="col-lg-2 col-md-3 col-sm-2 col-2">
         <span><i class="fa fa-trash remove-item" data-id="${item.id}"></i></span>
@@ -136,7 +136,6 @@ class UIAll {
   clearFav(){
     let favItems = fav.map(item => item.id);
     favItems.forEach(id => this.removeItem(id));
-    console.log(favContent.children);
     while(favContent.children.length>0){
       favContent.removeChild(favContent.children[0])
     }
@@ -182,8 +181,6 @@ class Storage {
     return localStorage.getItem('fav')?JSON.parse(localStorage.getItem('fav')): [];
   }
 }
-
-console.log(localStorage.getItem('fav'))
 
 document.addEventListener("DOMContentLoaded", () => {
   const ui = new UIAll();

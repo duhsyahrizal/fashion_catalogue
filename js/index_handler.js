@@ -1,5 +1,3 @@
-var url = '../js/products.json?v=1.3';
-
 // function to add dot (.) in integer for money
 function numberWithCommas(x) {
   // console.log(x)

@@ -4,9 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
-	<!-- Favicons -->
-	<link rel="icon" href="/assets/logo/logo.png">
+		<!-- Favicons -->
+		<link rel="icon" href="assets/logo/logo.png">
 	
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
@@ -35,11 +36,11 @@
 						<div class="menu">Menu</div>
 						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 						<ul class="menu-list">
-							<li><a href="/" class="animate-menu">Home</a></li>
-							<li><a href="/products/categories" class="animate-menu">Products</a></li>
-							<li><a href="//how-to-order" class="animate-menu">How to Order</a></li>
-							<li><a href="/contact" class="animate-menu">Contact Us</a></li>
-							<li><a href="/about-us" class="animate-menu">About Us</a></li>
+							<li><a href="" class="animate-menu">Home</a></li>
+							<li><a href="products/categories" class="animate-menu">Products</a></li>
+							<li><a href="how-to-order" class="animate-menu">How to Order</a></li>
+							<li><a href="contact" class="animate-menu">Contact Us</a></li>
+							<li><a href="about-us" class="animate-menu">About Us</a></li>
 						</ul>
 
 						<ul class="social">
@@ -55,10 +56,10 @@
 					</button>
 						
 					<div class="navbar-header mr-auto ml-auto">
-						<a class="navbar-brand logo" href="/">
+						<a class="navbar-brand logo" href="">
 							<picture>
-								<source srcset="/assets/logo/logo.png" media="(max-width: 768px)">
-								<img src="/assets/logo/logo.png" alt="Nymar" height="60">
+								<source srcset="assets/logo/logo.png" media="(max-width: 768px)">
+								<img src="assets/logo/logo.png" alt="Nymar" height="60">
 							</picture>
 						</a>
 					</div>
@@ -82,11 +83,11 @@
 		<section class="current-location">
 			<div class="container-fluid bg-light text-center" id="block-mobile">
 				<h3 class="poppins" id="title-mobile">How to Order</h3>
-				<div class="recent-page"><a href="/"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> How to Order
+				<div class="recent-page"><a href=""><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> How to Order
 				</div>
 			</div>
 			<div class="container current-page nav-avoid">
-				<div class="recent-page py-2"><a href="/"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> How to Order
+				<div class="recent-page py-2"><a href=""><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> How to Order
 			</div>
 		</section>
 	
@@ -172,7 +173,7 @@
 				<div class="fav-footer">
 					<h3 class="mb-4">Your Total : IDR. <span class="fav-total">0</span></h3>
 					<button class="banner-btn clear-fav mb-2">Clear Favorites</button>
-					<a href="/how-to-order"><span class="t-bold"><i class="fa fa-question-circle" aria-hidden="true"></i> How to Order</span></a>
+					<a href="how-to-order"><span class="t-bold"><i class="fa fa-question-circle" aria-hidden="true"></i> How to Order</span></a>
 				</div>
 			</div>
 		</div>
@@ -192,15 +193,15 @@
 				<div class="col-12 col-sm-6 col-md col-lg">
 				  <h5 class="t-bold">INFORMATION</h5>
           <ul>
-            <li><a href="/about-us">About Us</a></li>
-						<li><a href="/how-to-order">How to Order</a></li>
+            <li><a href="about-us">About Us</a></li>
+						<li><a href="how-to-order">How to Order</a></li>
           </ul>
 				</div>
 				<div class="col-12 col-sm-6 col-md col-lg" id="cs-col">
           <h5 class="t-bold">LINKS</h5>
           <ul>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/products/categories">Products</a></li>
+            <li><a href="contact">Contact Us</a></li>
+            <li><a href="products/categories">Products</a></li>
           </ul>
 				</div>
 				<div class="col-12 col-sm-6 col-md col-lg social-icon">
@@ -223,8 +224,8 @@
 
 	<!-- JavaScript -->
 	<script src="js/script.js"></script>
-	<script src="js/favorite_item.js?v=1.2"></script>
-	<script src="/js/app.js?v=1.5"></script>
+	<script src="js/favorite_item.js?v=1.4"></script>
+	<script src="js/app.js?v=1.6"></script>
 	<script>
 		$(document).ready(function() {
 			$.ajax({

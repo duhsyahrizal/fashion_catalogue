@@ -4,15 +4,16 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
 
 	<!-- Favicons -->
-	<link rel="icon" href="/assets/logo/logo.png">
+	<link rel="icon" href="../assets/logo/logo.png">
 	
     <!-- Bootstrap CSS -->
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
 	
 	<!-- Custom CSS -->
-	<link rel="stylesheet" href="/style.css?v=2.3">
+	<link rel="stylesheet" href="../style.css?v=2.3">
 
 	<!-- Font Awesome -->
 	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
@@ -35,11 +36,11 @@
 						<div class="menu">Menu</div>
 						<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
 						<ul class="menu-list">
-							<li><a href="/" class="animate-menu">Home</a></li>
-							<li><a href="/products/categories" class="animate-menu">Products</a></li>
-							<li><a href="/how-to-order" class="animate-menu">How to Order</a></li>
-							<li><a href="/contact" class="animate-menu">Contact Us</a></li>
-							<li><a href="/about-us" class="animate-menu">About Us</a></li>
+							<li><a href="../" class="animate-menu">Home</a></li>
+							<li><a href="categories" class="animate-menu">Products</a></li>
+							<li><a href="../how-to-order" class="animate-menu">How to Order</a></li>
+							<li><a href="../contact" class="animate-menu">Contact Us</a></li>
+							<li><a href="../about-us" class="animate-menu">About Us</a></li>
 						</ul>
 
 						<ul class="social">
@@ -55,22 +56,22 @@
 					</button>
 						
 					<div class="navbar-header mr-auto ml-auto">
-						<a class="navbar-brand logo" href="/">
+						<a class="navbar-brand logo" href="../">
 							<picture>
-								<source srcset="/assets/logo/logo.png" media="(max-width: 768px)">
-								<img src="/assets/logo/logo.png" alt="Nymar" height="60">
+								<source srcset="../assets/logo/logo.png" media="(max-width: 768px)">
+								<img src="../assets/logo/logo.png" alt="Nymar" height="60">
 							</picture>
 						</a>
 					</div>
 						
 					<div class="navbar-header search" style="text-align:right;">
-						<form action="/products/result.php" id="searchForm" method="get">
+						<form action="result.php" id="searchForm" method="get">
 							<input type="text" name="s" id="search-input" placeholder="Search.." autocomplete="off">
 						</form>
 						
 						<div class="notification navbar-brand">
 							<div class="showFav">
-								<img src="/images/ic_heart_ol.svg" height="34">
+								<img src="../images/ic_heart_ol.svg" height="34">
 								<span class="badge">0</span>
 							</div>
 						</div>
@@ -114,11 +115,11 @@
       <?php 
         if ($status == 1){
           echo '<h3 class="poppins" id="title-mobile">'.$newValue.'</h3>';
-          echo '<div class="recent-page"><a href="/"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
+          echo '<div class="recent-page"><a href="../"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
         }
         else {
           echo '<h3 class="poppins" id="title-mobile">'.$newValue.'</h3>';
-          echo '<div class="recent-page"><a href="/"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
+          echo '<div class="recent-page"><a href="../"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
         }
       ?>
 			</div>
@@ -126,10 +127,10 @@
 		<div class="container current-page">
       <?php 
         if ($status == 1){
-          echo '<div class="recent-page mt-2 py-3"><a href="index"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
+          echo '<div class="recent-page mt-2 py-3"><a href="../"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
         }
         else {
-          echo '<div class="recent-page mt-2 py-3"><a href="index"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
+          echo '<div class="recent-page mt-2 py-3"><a href="../"><i class="fa fa-home" aria-hidden="true"> </i> Home </a> <i class="fa fa-angle-right" aria-hidden="true"> </i> '.$newValue.'</div>';
         }
       ?>
 		</div>
@@ -187,7 +188,7 @@
 				<div class="fav-footer">
 					<h3 class="mb-4">Your Total : IDR. <span class="fav-total">0</span></h3>
 					<button class="banner-btn clear-fav mb-2">Clear Favorites</button>
-					<a href="/how-to-order"><span class="t-bold"><i class="fa fa-question-circle" aria-hidden="true"></i> How to Order</span></a>
+					<a href="../how-to-order"><span class="t-bold"><i class="fa fa-question-circle" aria-hidden="true"></i> How to Order</span></a>
 				</div>
 			</div>
 		</div>
@@ -207,15 +208,15 @@
 				<div class="col-12 col-sm-6 col-md col-lg">
 				  <h5 class="t-bold">INFORMATION</h5>
           <ul>
-            <li><a href="/about-us">About Us</a></li>
-						<li><a href="/how-to-order">How to Order</a></li>
+            <li><a href="../about-us">About Us</a></li>
+						<li><a href="../how-to-order">How to Order</a></li>
           </ul>
 				</div>
 				<div class="col-12 col-sm-6 col-md col-lg" id="cs-col">
           <h5 class="t-bold">LINKS</h5>
           <ul>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="/products/categories">Products</a></li>
+            <li><a href="../contact">Contact Us</a></li>
+            <li><a href="categories">Products</a></li>
           </ul>
 				</div>
 				<div class="col-12 col-sm-6 col-md col-lg social-icon">
@@ -238,7 +239,7 @@
 	
   <!-- JavaScript -->
   <script src="../js/script.js"></script>
-  <script src="../js/favorite_item.js?v=1.2"></script>
-	<script src="/js/app.js?v=1.5"></script>
+  <script src="../js/favorite_item.js?v=1.3"></script>
+	<script src="../js/app.js?v=1.6"></script>
 	</body>
 </html>
